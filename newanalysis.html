@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>GEO Workspace | Optiyx</title>
+    
+    <link rel="icon" href="https://yt3.ggpht.com/tm3mtr2ySIeuiUC6HQhq-tIVc-ljodc-KbBUpO9zf8jVSHdf615HRSg6teQ0E4NGQiT1XFblbw=s176-c-k-c0x00ffffff-no-rj" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    
+    <!-- Access Validation Script to prevent direct URL entry -->
+    <script>
+        (function() {
+            // Primary check: sessionStorage flag set by index.html when user clicks New Analysis
+            var authorized = sessionStorage.getItem('optiyx_analysis_auth');
+            if (authorized === '1') {
+                sessionStorage.removeItem('optiyx_analysis_auth');
+                return; // Authorized — proceed
+            }
+
+            // Fallback: check referrer for users coming from index.html
+            var ref = document.referrer;
+            if (ref) {
+                var hasIndex = ref.indexOf("index.html") !== -1;
+                var isRoot = /\/[^/]*$/.test(ref) && ref.replace(/\/[^/]*$/, '/') === ref.replace(/[^/]*$/, '');
+                var sameOrigin = ref.indexOf(window.location.origin) === 0 || ref.indexOf(window.location.host) !== -1;
+                // Allow if referrer is from same site root or index
+                if (hasIndex || (sameOrigin && (ref.endsWith('/') || ref.endsWith('index.html')))) {
+                    return;
+                }
+            }
+
+            // No valid access path — redirect to home
+            window.location.replace("./index.html");
+        })();
+    </script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="fullscreen-iframe-body">
+
+    <!-- Loading Overlay -->
+    <div id="loader" class="loading-overlay">
+        <div class="spinner"></div>
+        <h3 style="margin-top: 1.5rem; letter-spacing: 0.05em; font-family: var(--font-heading);">Optiyx GEO Engine</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Bootstrapping GenAI model workspace...</p>
+    </div>
+    
+    <!-- Distraction-free Full Screen Iframe Workspace -->
+    <iframe
+        id="analysis-frame"
+        class="fullscreen-iframe"
+        allowfullscreen
+        allow="fullscreen; clipboard-read; clipboard-write"
+        referrerpolicy="no-referrer"
+        title="Optiyx Generative Engine Workspace"
+    ></iframe>
+
+    <!-- Dynamic Base64 URL Decoder & Loader -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const frame = document.getElementById("analysis-frame");
+            const loader = document.getElementById("loader");
+            
+            // Base64 Obfuscated Cloud Run URL
+            const encryptedUrl = "aHR0cHM6Ly9vcHRpeXgtNTM3MTc4MTgyNjAzLmFzaWEtc291dGhlYXN0MS5ydW4uYXBw";
+            
+            try {
+                // Decrypt at runtime
+                const targetUrl = atob(encryptedUrl);
+                frame.src = targetUrl;
+                
+                // Fade out loader when the iframe is fully ready
+                frame.onload = function() {
+                    loader.style.opacity = "0";
+                    setTimeout(() => {
+                        loader.style.display = "none";
+                    }, 500);
+                };
+            } catch (e) {
+                console.error("Initialization failure:", e);
+                loader.innerHTML = `
+                    <i class="fa-solid fa-circle-exclamation" style="font-size: 2.5rem; color: var(--accent-cyan);"></i>
+                    <h3 style="margin-top: 1rem;">Load Failure</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Failed to initialize GEO Engine securely.</p>
+                `;
+            }
+        });
+    </script>
+
+</body>
+</html>
