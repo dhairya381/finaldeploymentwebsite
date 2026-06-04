@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8DS248VMG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L8DS248VMG');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    
+
     <title>GEO Workspace | Optiyx</title>
-    
-    <link rel="icon" href="https://yt3.ggpht.com/tm3mtr2ySIeuiUC6HQhq-tIVc-ljodc-KbBUpO9zf8jVSHdf615HRSg6teQ0E4NGQiT1XFblbw=s176-c-k-c0x00ffffff-no-rj" type="image/x-icon">
+
+    <link rel="icon"
+        href="https://yt3.ggpht.com/tm3mtr2ySIeuiUC6HQhq-tIVc-ljodc-KbBUpO9zf8jVSHdf615HRSg6teQ0E4NGQiT1XFblbw=s176-c-k-c0x00ffffff-no-rj"
+        type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
-    
+
     <!-- Access Validation Script to prevent direct URL entry -->
     <script>
-        (function() {
+        (function () {
             // Primary check: sessionStorage flag set by index.html when user clicks New Analysis
             var authorized = sessionStorage.getItem('optiyx_analysis_auth');
             if (authorized === '1') {
@@ -36,45 +48,42 @@
             window.location.replace("./index.html");
         })();
     </script>
-    
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="fullscreen-iframe-body">
 
     <!-- Loading Overlay -->
     <div id="loader" class="loading-overlay">
         <div class="spinner"></div>
         <h3 style="margin-top: 1.5rem; letter-spacing: 0.05em; font-family: var(--font-heading);">Optiyx GEO Engine</h3>
-        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Bootstrapping GenAI model workspace...</p>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Bootstrapping GenAI model
+            workspace...</p>
     </div>
-    
+
     <!-- Distraction-free Full Screen Iframe Workspace -->
-    <iframe
-        id="analysis-frame"
-        class="fullscreen-iframe"
-        allowfullscreen
-        allow="fullscreen; clipboard-read; clipboard-write"
-        referrerpolicy="no-referrer"
-        title="Optiyx Generative Engine Workspace"
-    ></iframe>
+    <iframe id="analysis-frame" class="fullscreen-iframe" allowfullscreen
+        allow="fullscreen; clipboard-read; clipboard-write" referrerpolicy="no-referrer"
+        title="Optiyx Generative Engine Workspace"></iframe>
 
     <!-- Dynamic Base64 URL Decoder & Loader -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const frame = document.getElementById("analysis-frame");
             const loader = document.getElementById("loader");
-            
+
             // Base64 Obfuscated Cloud Run URL
             const encryptedUrl = "aHR0cHM6Ly9vcHRpeXgtNTM3MTc4MTgyNjAzLmFzaWEtc291dGhlYXN0MS5ydW4uYXBw";
-            
+
             try {
                 // Decrypt at runtime
                 const targetUrl = atob(encryptedUrl);
                 frame.src = targetUrl;
-                
+
                 // Fade out loader when the iframe is fully ready
-                frame.onload = function() {
+                frame.onload = function () {
                     loader.style.opacity = "0";
                     setTimeout(() => {
                         loader.style.display = "none";
@@ -92,4 +101,5 @@
     </script>
 
 </body>
+
 </html>
