@@ -39,8 +39,10 @@
             <ul class="nav-links">
                 <li><a href="./methodology.html" class="nav-item active"
                         style="color: var(--text-primary);">Methodology</a></li>
+                <li><a href="./blog.html" class="nav-item">Blog</a></li>
                 <li><a href="./faq.html" class="btn-cyan">Deep Dive</a></li>
-                <li><a href="./newanalysis.html" class="btn-bordered">New Analysis</a></li>
+                <li><a href="./newanalysis.html" class="btn-bordered"
+                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a></li>
             </ul>
         </nav>
     </header>
@@ -180,9 +182,10 @@
             <div class="footer-col">
                 <h4>Product</h4>
                 <ul>
-                    <li><a href="./newanalysis.html">Start Analysis</a></li>
+                    <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start Analysis</a></li>
                     <li><a href="./methodology.html">Methodology</a></li>
                     <li><a href="./faq.html">FAQs</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
