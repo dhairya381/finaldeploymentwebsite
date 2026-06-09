@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /newanalysis.html
+
+Sitemap: https://optiyx.com/sitemap.xml
