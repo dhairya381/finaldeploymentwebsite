@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8DS248VMG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L8DS248VMG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Optiyx | Investor Pitch Deck</title>
+    <meta name="description" content="Optiyx Pitch Deck for Eureka E-Cell. Generative Engine Optimization (GEO) for AI Search.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .pitch-hero {
+            padding: 8rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle at center, rgba(0, 194, 232, 0.1) 0%, var(--bg-primary) 70%);
+        }
+        .pitch-section {
+            padding: 5rem 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .pitch-section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        .pitch-section-title span {
+            color: var(--accent-cyan);
+        }
+        .competitor-card {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 2rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin-bottom: 1.5rem;
+        }
+        .revenue-box {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+        .revenue-box:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-5px);
+        }
+        .highlight-text {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header-nav" id="main-nav">
+        <a href="./index.html" class="logo">
+            <div class="logo-icon">O</div>
+            <span>Optiyx</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./methodology.html" class="nav-item">Methodology</a></li>
+                <li><a href="./blog.html" class="nav-item">Blog</a></li>
+                <li><a href="./pitchdeck.html" class="nav-item" style="color: var(--text-primary); font-weight: 700;">Pitch Deck</a></li>
+                <li><a href="./faq.html" class="btn-cyan">Deep Dive</a></li>
+                <li><a href="./newanalysis.html" class="btn-bordered"
+                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pitch Hero -->
+    <section class="pitch-hero">
+        <div class="hero-glow"></div>
+        <h4 style="color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">Eureka E-Cell Submission</h4>
+        <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem;">Optiyx <span>Pitch Deck</span></h1>
+        <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+            Pioneering the transition from search engine indexing to generative AI citations. We bridge the gap between diagnostic observation and actionable AI remediation.
+        </p>
+    </section>
+
+    <!-- 1. The Problem -->
+    <section class="pitch-section container" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="pitch-section-title">The <span>Problem</span></h2>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
+            There is a massive shift from Google searches to AI-driven tools. Companies face a massive new challenge: <strong class="highlight-text">AI Invisibility</strong>. Traditional SEO rules no longer guarantee that a brand will be cited or recommended in AI answers.
+        </p>
+        
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-keyboard"></i></span>
+                <h3>Manual Search Checks</h3>
+                <p>Marketing teams waste hours typing random prompts into ChatGPT and Perplexity to manually check if their brand gets mentioned.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <h3>Outdated SEO Tools</h3>
+                <p>Companies keep paying for standard SEO platforms to track keyword rankings, failing to see why their organic traffic is dropping.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                <h3>Guesswork Content</h3>
+                <p>Content creators push out generic blogs and FAQs hoping AI crawlers pick them up, operating without any clear data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Target Audience -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Target <span>Customers</span></h2>
+        <div class="grid-2">
+            <div class="card" style="text-align: center;">
+                <div class="card-icon-briefcase" style="margin: 0 auto 1.5rem auto;"><i class="fa-solid fa-building"></i></div>
+                <h3>B2B / Agencies</h3>
+                <p>Website or software developing companies use our consultancy services and implement it on their customers' products (partnership/subscription model).</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="card-icon-briefcase" style="margin: 0 auto 1.5rem auto;"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>B2C / Enterprises</h3>
+                <p>Companies audit their own product to note what should be changed and implemented. Future vision includes doing the implementation job rather than sole consultancy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Technological Innovation & IP -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Technological <span>Innovation & IP</span></h2>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
+            Optiyx's innovation lies in its <strong class="highlight-text">Real-Time Site Crawler & Automated Remediation Architecture</strong>. We evaluate how Generative AI models parse, contextualize, and retrieve brand data.
+        </p>
+        
+        <div class="sequence-container">
+            <div class="sequence-step">
+                <div class="sequence-number"><i class="fa-solid fa-bolt"></i></div>
+                <div class="sequence-content">
+                    <h3>Diagnostic-to-Action Automation</h3>
+                    <p>Competitors act as observability platforms—generating graphs of missing citations while leaving execution to guesswork. Optiyx automatically converts audit findings into explicit code snippets, tailored JSON-LD schema updates, and direct technical fixes.</p>
+                </div>
+            </div>
+            <div class="sequence-step">
+                <div class="sequence-number"><i class="fa-solid fa-microchip"></i></div>
+                <div class="sequence-content">
+                    <h3>Full-Stack Site & Crawler Audits</h3>
+                    <p>Rather than relying solely on scraping pre-indexed prompt databases, Optiyx inspects a site's underlying technical architecture, entity relationships, server-side renderability, and structured metadata to fix why an LLM crawler skips a site.</p>
+                </div>
+            </div>
+            <div class="sequence-step">
+                <div class="sequence-number"><i class="fa-solid fa-robot"></i></div>
+                <div class="sequence-content">
+                    <h3>Agentic Readiness Evaluation</h3>
+                    <p>Goes beyond conversational search (GEO) to evaluate whether a brand's structured data is readable and executable for autonomous AI agents performing real-world transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Competitor Landscape -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Competitor <span>Landscape</span></h2>
+        <div class="grid-2">
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);"><i class="fa-solid fa-crosshairs" style="color: var(--accent-cyan); margin-right: 10px;"></i>Direct Competitors</h3>
+                <div class="competitor-card">
+                    <h4>Dedicated GEO Platforms</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Profound, Cognizo, Rankscale, AthenaHQ. Pure-play tools monitoring brand citations, share of voice, and prompt volume.</p>
+                </div>
+                <div class="competitor-card">
+                    <h4>Lightweight Mention Trackers</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Hall, WorkDuo.ai. Entry-level SaaS solutions offering multi-model visibility tracking tailored for SMBs and marketing agencies.</p>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);"><i class="fa-solid fa-ghost" style="color: var(--text-muted); margin-right: 10px;"></i>Indirect Competitors</h3>
+                <div class="competitor-card" style="border-left-color: var(--text-muted);">
+                    <h4>Legacy SEO Platforms</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Semrush, Ahrefs, SE Ranking. Established SEO suites incorporating AI overview tracking to retain users.</p>
+                </div>
+                <div class="competitor-card" style="border-left-color: var(--text-muted);">
+                    <h4>GEO Agencies & PR Consultants</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">TripleDart, iPullRank. Boutique agencies delivering high-touch, manual AI visibility audits for enterprise clients.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-callout" style="margin-top: 2rem;">
+            <h3>Our Differentiation</h3>
+            <p>While Ahrefs and Profound monitor LLM prompts and provide visibility graphs, Optiyx differentiates itself by combining automated URL scraping, sentiment analysis, and action-oriented GEO audit reports into an accessible <strong>SaaS-plus-consulting hybrid model</strong> built for SMBs and growing agencies.</p>
+        </div>
+    </section>
+
+    <!-- 5. Business Model -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Revenue & <span>Growth</span></h2>
+        
+        <h3 style="text-align: center; margin-bottom: 2rem;">Revenue Model</h3>
+        <div class="grid-2">
+            <div class="revenue-box">
+                <i class="fa-solid fa-layer-group" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Tiered SaaS Subscriptions</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Recurring monthly/annual plans based on audit volume, tracked domain limits, and report frequency.</p>
+            </div>
+            <div class="revenue-box">
+                <i class="fa-solid fa-handshake" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Enterprise Audits & Consulting</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Fixed-fee, deep-dive baseline audits combined with high-margin strategic advisory for custom fixes.</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">Future Growth Opportunities</h3>
+        <div class="grid-3">
+            <div class="card">
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Agency White-Labeling</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">Enabling digital agencies to rebrand and resell automated GEO audits directly to their clients.</p>
+            </div>
+            <div class="card">
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Automated Remediation</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">Upgrading from diagnostic reports to auto-generating schema markup and AI-optimized content updates.</p>
+            </div>
+            <div class="card">
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Analytics Integrations</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">Connecting directly with CMS and Search Console data to correlate AI visibility directly with web conversions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <div class="logo-icon"
+                        style="width: 26px; height: 26px; font-size: 14px; border-radius: 6px; box-shadow: none;">O
+                    </div>
+                    <span>Optiyx</span>
+                </div>
+                <p style="margin-bottom: 1.5rem;">Leading the transition from search engine indexing to generative AI
+                    citations. Future-proof your search presence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start
+                            Analysis</a></li>
+                    <li><a href="./methodology.html">Methodology</a></li>
+                    <li><a href="./pitchdeck.html">Pitch Deck</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Optiyx. All rights reserved.</p>
+            <p>Empowering digital growth in the age of generative AI.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
