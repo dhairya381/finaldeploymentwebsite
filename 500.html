@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8DS248VMG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L8DS248VMG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>500 - Server Error | Optiyx GEO</title>
+    <meta name="description" content="An internal server error occurred while processing your request. Please try again or return home.">
+
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header-nav" id="main-nav">
+        <a href="./index.html" class="logo">
+            <div class="logo-icon">O</div>
+            <span>Optiyx</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./methodology.html" class="nav-item">Methodology</a></li>
+                <li><a href="./blog.html" class="nav-item">Blog</a></li>
+                <li><a href="./pitchdeck.html" class="nav-item">Pitch Deck</a></li>
+                <li><a href="./faq.html" class="btn-cyan">Deep Dive</a></li>
+                <li><a href="./newanalysis.html" class="btn-bordered"
+                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 500 Main Section -->
+    <section class="hero" style="min-height: calc(100vh - 350px); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 6rem 1.5rem 4rem;">
+        <div class="hero-glow"></div>
+        <div style="font-size: clamp(5rem, 12vw, 9rem); font-weight: 800; background: linear-gradient(135deg, #ff4b4b 0%, #ff8533 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 1rem; filter: drop-shadow(0 0 35px rgba(255, 75, 75, 0.4));">
+            500
+        </div>
+        <h1 style="font-size: 2.25rem; margin-bottom: 1rem;">Server Signal <span>Disrupted</span></h1>
+        <p style="max-width: 600px; margin: 0 auto 2.5rem; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+            An unexpected server error occurred while synthesizing your request. Our system nodes have logged this anomaly and are resolving it.
+        </p>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <button onclick="window.location.reload()" class="btn-cyan" style="font-size: 1rem; padding: 0.75rem 1.75rem; cursor: pointer;">
+                <i class="fa-solid fa-rotate-right"></i> Refresh Page
+            </button>
+            <a href="./index.html" class="btn-bordered" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+                <i class="fa-solid fa-house"></i> Return to Home
+            </a>
+            <a href="mailto:founders@optiyx.com" class="btn-bordered" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+                <i class="fa-solid fa-envelope"></i> Contact Support
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <div class="logo-icon"
+                        style="width: 26px; height: 26px; font-size: 14px; border-radius: 6px; box-shadow: none;">O
+                    </div>
+                    <span>Optiyx</span>
+                </div>
+                <p style="margin-bottom: 1.5rem;">Leading the transition from search engine indexing to generative AI
+                    citations. Future-proof your search presence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start
+                            Analysis</a></li>
+                    <li><a href="./methodology.html">Methodology</a></li>
+                    <li><a href="./pitchdeck.html">Pitch Deck</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:founders@optiyx.com"><i class="fa-solid fa-envelope"></i> Email Us</a></li>
+                    <li><a href="https://www.linkedin.com/company/optiyx/about/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Optiyx. All rights reserved.</p>
+            <p>Empowering digital growth in the age of generative AI.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
