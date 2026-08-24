@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-L8DS248VMG');
     </script>
     <meta charset="UTF-8">
@@ -17,10 +16,9 @@
         content="Explore the Optiyx GEO Methodology for generative engine optimization. We are an AI search optimisation agency helping businesses and law firms rank higher on ChatGPT, Gemini, and Claude.">
     <meta name="keywords" content="generative engine optimization, ai search optimisation, ai search optimisation agency, GEO methodology, ChatGPT SEO, Gemini optimization">
     <meta name="robots" content="index, follow">
-
     <title>GEO Optimization Methodology | AI Search Optimisation - Optiyx</title>
 
-    <!-- Open Graph (Facebook / LinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://optiyx.com/methodology.html">
     <meta property="og:title" content="GEO Optimization Methodology | AI Search Optimisation - Optiyx">
@@ -28,19 +26,15 @@
         content="Explore the Optiyx GEO Methodology for generative engine optimization. We are an AI search optimisation agency helping businesses and law firms rank higher on AI engines.">
     <meta property="og:image" content="https://optiyx.com/og-image.png">
 
-    <!-- Twitter / X Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="GEO Optimization Methodology | AI Search Optimisation - Optiyx">
     <meta name="twitter:description"
         content="Explore the Optiyx GEO Methodology for generative engine optimization. We are an AI search optimisation agency helping businesses and law firms rank higher on AI engines.">
     <meta name="twitter:image" content="https://optiyx.com/og-image.png">
 
-    <link rel="icon"
-        href="https://yt3.ggpht.com/tm3mtr2ySIeuiUC6HQhq-tIVc-ljodc-KbBUpO9zf8jVSHdf615HRSg6teQ0E4NGQiT1XFblbw=s176-c-k-c0x00ffffff-no-rj"
-        type="image/x-icon">
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
-
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="application/ld+json">
     {
@@ -62,141 +56,245 @@
 
 <body>
 
-    <!-- Header Navigation -->
-    <header class="header-nav">
+    <!-- Navigation -->
+    <header class="header-nav" id="main-nav">
         <a href="./index.html" class="logo">
             <div class="logo-icon">O</div>
-            <span>Optiyx</span>
+            <span class="logo-name">Optiyx</span>
         </a>
         <nav>
-            <ul class="nav-links">
-                <li><a href="./methodology.html" class="nav-item active"
-                        style="color: var(--text-primary);">Methodology</a></li>
-                <li><a href="./blog.html" class="nav-item">Blog</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./methodology.html" class="nav-item active">Methodology</a></li>
+                <li><a href="./blog.html" class="nav-item">Research</a></li>
                 <li><a href="./pitchdeck.html" class="nav-item">Pitch Deck</a></li>
-                <li><a href="./faq.html" class="btn-cyan">Deep Dive</a></li>
-                <li><a href="./newanalysis.html" class="btn-bordered"
-                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a></li>
             </ul>
         </nav>
+        <div class="nav-right">
+            <a href="./newanalysis.html" class="btn-primary" id="nav-new-analysis"
+                onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
 
-    <!-- Page Banner -->
-    <section class="hero" style="padding-bottom: 2rem;">
-        <div class="hero-glow"></div>
-        <h1>Our <span>GEO Methodology</span></h1>
-        <p>The structured process of adapting website content to align with LLM indexing, retrieval algorithms, and
-            conversational search response structures.</p>
+    <!-- ══════════════════════
+         HERO
+         ══════════════════════ -->
+    <section class="method-page-hero" aria-labelledby="method-hero-heading">
+        <div class="container">
+            <div class="section-meta" style="margin-bottom:24px;">
+                <span class="section-index">/ Methodology</span>
+            </div>
+            <div class="grid-7-5" style="gap:48px;align-items:center;">
+                <div>
+                    <div class="hero-eyebrow" style="margin-bottom:20px;">AI Visibility Intelligence</div>
+                    <h1 id="method-hero-heading" style="font-size:clamp(28px,4vw,52px);letter-spacing:-0.03em;margin-bottom:20px;line-height:1.1;">
+                        The Optiyx<br>GEO Methodology
+                    </h1>
+                    <p style="font-size:15px;color:var(--text-secondary);line-height:1.75;max-width:460px;">
+                        A structured process for adapting website content to align with LLM indexing, retrieval algorithms, and conversational search response structures.
+                    </p>
+                </div>
+                <div class="method-horizontal" style="align-self:stretch;">
+                    <div class="method-card" style="padding:20px 16px;">
+                        <span class="method-num">01</span>
+                        <div class="method-name" style="font-size:11px;">Discover</div>
+                    </div>
+                    <div class="method-card" style="padding:20px 16px;">
+                        <span class="method-num">02</span>
+                        <div class="method-name" style="font-size:11px;">Observe</div>
+                    </div>
+                    <div class="method-card" style="padding:20px 16px;">
+                        <span class="method-num">03</span>
+                        <div class="method-name" style="font-size:11px;">Explain</div>
+                    </div>
+                    <div class="method-card" style="padding:20px 16px;">
+                        <span class="method-num">04</span>
+                        <div class="method-name" style="font-size:11px;">Optimize</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Core Methodology Sections -->
-    <main class="container" style="padding-top: 0;">
-        <div style="display: flex; flex-direction: column; gap: 4rem;">
-
-            <!-- Section 1: FAQ and Q&A Engineering -->
-            <article class="grid-2" style="align-items: center;">
+    <!-- ══════════════════════
+         SECTION 1: FAQ & Q&A Engineering
+         ══════════════════════ -->
+    <section class="method-page-section" aria-labelledby="method-s1-heading">
+        <div class="container">
+            <div class="section-meta" style="margin-bottom:20px;">
+                <span class="section-index">/ 01</span>
+                <span class="eyebrow">FAQ &amp; Q&amp;A Optimization</span>
+            </div>
+            <div class="grid-7-5" style="gap:48px;align-items:start;">
                 <div>
-                    <h2 style="font-size: 1.85rem; margin-bottom: 1.25rem;"><span style="color: var(--accent-cyan);"><i
-                                class="fa-regular fa-comments"></i></span> FAQ & Q&A Optimization</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Large Language Models (LLMs) rely on question-answering paradigms to fulfill search intent. If
-                        your content directly replicates the question a user types, and answers it immediately, the
-                        model is highly likely to extract and quote your exact text.
+                    <h2 id="method-s1-heading" style="font-size:clamp(22px,3vw,32px);letter-spacing:-0.025em;margin-bottom:16px;">
+                        Structure answers the way AI systems retrieve them.
+                    </h2>
+                    <p style="font-size:14.5px;color:var(--text-secondary);margin-bottom:14px;line-height:1.75;">
+                        Large Language Models (LLMs) rely on question-answering paradigms to fulfill search intent. If your content directly replicates the question a user types, and answers it immediately, the model is highly likely to extract and quote your exact text.
                     </p>
-                    <p style="color: var(--text-secondary);">
-                        We help identify high-frequency natural language questions and structure them in clean,
-                        conversational formats. This ensures prompt-retrieval systems select your page as a direct
-                        resource.
+                    <p style="font-size:14.5px;color:var(--text-secondary);line-height:1.75;">
+                        We identify high-frequency natural language questions and structure them in clean, conversational formats. This ensures prompt-retrieval systems select your page as a direct resource — rather than a competitor's.
                     </p>
                 </div>
-                <div class="card" style="border-color: var(--accent-cyan);">
-                    <h3 style="margin-bottom: 1rem; color: var(--accent-cyan);">FAQ Structure Guidelines</h3>
-                    <ul
-                        style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary);">
-                        <li><i class="fa-solid fa-angle-right"
-                                style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> Use clear H2/H3 headers
-                            for questions.</li>
-                        <li><i class="fa-solid fa-angle-right"
-                                style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> Place the direct answer in
-                            the first sentence (under 40 words).</li>
-                        <li><i class="fa-solid fa-angle-right"
-                                style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> Support with
-                            schema-structured Q&A markup tags.</li>
+
+                <div class="method-panel">
+                    <div class="method-panel-title">FAQ Structure Guidelines</div>
+                    <ul class="method-panel-list">
+                        <li>Use clear H2/H3 headers phrased as the exact user question</li>
+                        <li>Place the direct answer in the first sentence (under 40 words)</li>
+                        <li>Support every answer with one specific data point or statistic</li>
+                        <li>Apply JSON-LD FAQPage schema markup to every Q&amp;A pair</li>
+                        <li>Group questions by topic cluster, not keyword</li>
                     </ul>
                 </div>
-            </article>
-
-            <!-- Section 2: Authority & Citation Mechanics -->
-            <article class="grid-2" style="align-items: center;">
-                <div class="card" style="order: 2; border-color: var(--accent-cyan);">
-                    <h3 style="margin-bottom: 1rem; color: var(--accent-cyan);">Model Preferences</h3>
-                    <ul
-                        style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary);">
-                        <li><i class="fa-solid fa-check" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i>
-                            Citations from peer-reviewed databases.</li>
-                        <li><i class="fa-solid fa-check" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i>
-                            Absolute numbers (e.g. "45% increase" over "significant growth").</li>
-                        <li><i class="fa-solid fa-check" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i>
-                            Attributed expert quotes with schema markup.</li>
-                    </ul>
-                </div>
-                <div style="order: 1;">
-                    <h2 style="font-size: 1.85rem; margin-bottom: 1.25rem;"><span style="color: var(--accent-cyan);"><i
-                                class="fa-solid fa-quote-left"></i></span> Authority & Citation Optimization</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Search models like Gemini and Bing Copilot do not just generate text; they cite sources to avoid
-                        hallucinations. These engines favor content that contains quantitative evidence, source links,
-                        and clear authority markers.
-                    </p>
-                    <p style="color: var(--text-secondary);">
-                        By formatting your landing pages with verifiable facts and specific statistics, you make it
-                        easier for LLMs to use your page as an anchor reference in their responses.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Section 3: Schema Markup & Bot Crawl Optimization -->
-            <article class="grid-2" style="align-items: center;">
-                <div>
-                    <h2 style="font-size: 1.85rem; margin-bottom: 1.25rem;"><span style="color: var(--accent-cyan);"><i
-                                class="fa-solid fa-diagram-project"></i></span> Technical Schema Integration</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Traditional web crawlers catalog pages, but LLM scrapers extract relational knowledge. To help
-                        them map relationships, we deploy structured data tags like JSON-LD, FAQ Schema, and Product
-                        Schema.
-                    </p>
-                    <p style="color: var(--text-secondary);">
-                        This helps AI parsers associate your brand name directly with target keywords, services, and
-                        statistics in their internal database graphs.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 style="margin-bottom: 1rem;">Supported Schema Formats</h3>
-                    <ul
-                        style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary);">
-                        <li><i class="fa-solid fa-code" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i>
-                            JSON-LD FAQPage Markup</li>
-                        <li><i class="fa-solid fa-code" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i>
-                            Organization & Citation Schema</li>
-                        <li><i class="fa-solid fa-code" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i>
-                            Product & Price Spec Schema</li>
-                    </ul>
-                </div>
-            </article>
-
+            </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Call to Action Section -->
-    <section class="container" style="text-align: center; padding-top: 2rem;">
-        <div class="card" style="max-width: 800px; margin: 0 auto; border-color: var(--accent-cyan);">
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Audit Your Content?</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-inline: auto;">
-                Use the Optiyx GEO strategist app to examine your site's content alignment and get immediate
-                recommendations.
-            </p>
-            <a href="./newanalysis.html" class="btn-cyan"><i class="fa-solid fa-bolt"></i> Open GEO Strategist
-                Workspace</a>
+    <!-- ══════════════════════
+         SECTION 2: Authority & Citation
+         ══════════════════════ -->
+    <section class="method-page-section" aria-labelledby="method-s2-heading">
+        <div class="container">
+            <div class="section-meta" style="margin-bottom:20px;">
+                <span class="section-index">/ 02</span>
+                <span class="eyebrow">Authority &amp; Citation Optimization</span>
+            </div>
+            <div class="grid-5-7" style="gap:48px;align-items:start;">
+
+                <div class="method-panel">
+                    <div class="method-panel-title">What AI models prefer to cite</div>
+                    <ul class="method-panel-list">
+                        <li>Citations from peer-reviewed databases or authoritative sources</li>
+                        <li>Absolute numbers — "45% increase" over "significant growth"</li>
+                        <li>Attributed expert quotes with organization and role</li>
+                        <li>Clear entity relationships (brand → product → category)</li>
+                        <li>Recency signals — dates, version numbers, current year references</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 id="method-s2-heading" style="font-size:clamp(22px,3vw,32px);letter-spacing:-0.025em;margin-bottom:16px;">
+                        Make your content citable by design.
+                    </h2>
+                    <p style="font-size:14.5px;color:var(--text-secondary);margin-bottom:14px;line-height:1.75;">
+                        Search models like Gemini and Claude do not just generate text — they cite sources to avoid hallucinations. These engines favor content that contains quantitative evidence, source links, and clear authority markers.
+                    </p>
+                    <p style="font-size:14.5px;color:var(--text-secondary);line-height:1.75;">
+                        By formatting your landing pages with verifiable facts and specific statistics, you make it easier for LLMs to use your page as an anchor reference. We audit your content for citation-readiness and rewrite sections to maximize extractability.
+                    </p>
+
+                    <div style="margin-top:24px;padding:20px;background-color:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-lg);">
+                        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);margin-bottom:12px;">Before / After</div>
+                        <div style="display:flex;flex-direction:column;gap:10px;">
+                            <div style="padding:10px 14px;background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--r-md);">
+                                <div style="font-size:10px;color:var(--danger);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:4px;">Weak</div>
+                                <div style="font-size:13px;color:var(--text-muted);">"Our software leads to significant efficiency improvements."</div>
+                            </div>
+                            <div style="padding:10px 14px;background:var(--bg-elevated);border:1px solid rgba(66,211,146,0.2);border-radius:var(--r-md);">
+                                <div style="font-size:10px;color:var(--success);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:4px;">Citable</div>
+                                <div style="font-size:13px;color:var(--text-secondary);">"Customers using X reduce invoice processing time by 67% (median, n=312 users, Q3 2025)."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════
+         SECTION 3: Schema & Technical
+         ══════════════════════ -->
+    <section class="method-page-section" aria-labelledby="method-s3-heading">
+        <div class="container">
+            <div class="section-meta" style="margin-bottom:20px;">
+                <span class="section-index">/ 03</span>
+                <span class="eyebrow">Technical Schema Integration</span>
+            </div>
+            <div class="grid-7-5" style="gap:48px;align-items:start;">
+                <div>
+                    <h2 id="method-s3-heading" style="font-size:clamp(22px,3vw,32px);letter-spacing:-0.025em;margin-bottom:16px;">
+                        Help AI parsers map your brand to its context.
+                    </h2>
+                    <p style="font-size:14.5px;color:var(--text-secondary);margin-bottom:14px;line-height:1.75;">
+                        Traditional web crawlers catalog pages. LLM scrapers extract relational knowledge. To help them map relationships, we deploy structured data tags like JSON-LD, FAQ Schema, and Product Schema.
+                    </p>
+                    <p style="font-size:14.5px;color:var(--text-secondary);line-height:1.75;">
+                        This helps AI parsers associate your brand name directly with target keywords, services, and statistics in their internal knowledge graphs — making you the correct answer when queries arrive.
+                    </p>
+
+                    <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px;">
+                        <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
+                            <i class="fa-solid fa-code" style="color:var(--text-faint);font-size:14px;width:16px;flex-shrink:0;"></i>
+                            <span style="font-size:13.5px;color:var(--text-secondary);">JSON-LD FAQPage Markup</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
+                            <i class="fa-solid fa-code" style="color:var(--text-faint);font-size:14px;width:16px;flex-shrink:0;"></i>
+                            <span style="font-size:13.5px;color:var(--text-secondary);">Organization &amp; Citation Schema</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
+                            <i class="fa-solid fa-code" style="color:var(--text-faint);font-size:14px;width:16px;flex-shrink:0;"></i>
+                            <span style="font-size:13.5px;color:var(--text-secondary);">Product &amp; Price Spec Schema</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
+                            <i class="fa-solid fa-code" style="color:var(--text-faint);font-size:14px;width:16px;flex-shrink:0;"></i>
+                            <span style="font-size:13.5px;color:var(--text-secondary);">Entity Relationship Markup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="method-panel" style="padding:0;overflow:hidden;">
+                    <div style="padding:16px 20px;border-bottom:1px solid var(--border);font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);">
+                        Example: FAQPage Schema
+                    </div>
+                    <pre style="padding:20px;font-family:var(--font-mono);font-size:11.5px;color:var(--text-muted);line-height:1.7;overflow-x:auto;margin:0;background:transparent;"><code style="color:inherit;">{
+  "@context": "schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is GEO?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Generative Engine
+      Optimization (GEO) is the
+      practice of structuring
+      content to be cited by AI
+      answer engines."
+    }
+  }]
+}</code></pre>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════
+         CTA
+         ══════════════════════ -->
+    <section style="padding:80px 0;text-align:center;" aria-label="Start your GEO analysis">
+        <div class="container">
+            <div style="max-width:440px;margin:0 auto;">
+                <div class="eyebrow accent" style="justify-content:center;display:flex;margin-bottom:20px;">
+                    Apply the Methodology
+                </div>
+                <h2 style="font-size:clamp(24px,3.5vw,36px);letter-spacing:-0.03em;margin-bottom:14px;">
+                    Audit your AI visibility now.
+                </h2>
+                <p style="font-size:14.5px;color:var(--text-secondary);margin-bottom:28px;line-height:1.65;">
+                    Use the Optiyx GEO workspace to examine your site's content alignment and get immediate recommendations.
+                </p>
+                <a href="./newanalysis.html" class="btn-primary" id="method-cta"
+                    onclick="sessionStorage.setItem('optiyx_analysis_auth','1')"
+                    style="font-size:14px;padding:10px 24px;">
+                    <i class="fa-solid fa-bolt" style="font-size:12px;"></i>
+                    Open GEO Workspace
+                </a>
+            </div>
         </div>
     </section>
 
@@ -205,13 +303,10 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <div class="logo-icon"
-                        style="width: 26px; height: 26px; font-size: 14px; border-radius: 6px; box-shadow: none;">O
-                    </div>
+                    <div class="logo-icon" style="width:24px;height:24px;font-size:12px;border-radius:4px;">O</div>
                     <span>Optiyx</span>
                 </div>
-                <p style="margin-bottom: 1.5rem;">Leading the transition from search engine indexing to generative AI
-                    citations. Future-proof your search presence.</p>
+                <p>AI visibility intelligence for brands that need to understand how AI systems perceive, retrieve, and cite them.</p>
             </div>
             <div class="footer-col">
                 <h4>Product</h4>
@@ -219,8 +314,8 @@
                     <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start Analysis</a></li>
                     <li><a href="./methodology.html">Methodology</a></li>
                     <li><a href="./pitchdeck.html">Pitch Deck</a></li>
-                    <li><a href="./faq.html">FAQs</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./blog.html">Research</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -233,17 +328,34 @@
             <div class="footer-col">
                 <h4>Connect</h4>
                 <ul>
-                    <li><a href="mailto:founders@optiyx.com"><i class="fa-solid fa-envelope"></i> Email Us</a></li>
-                    <li><a href="https://www.linkedin.com/company/optiyx/about/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="mailto:founders@optiyx.com"><i class="fa-solid fa-envelope" style="width:14px;"></i> founders@optiyx.com</a></li>
+                    <li><a href="https://www.linkedin.com/company/optiyx/about/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" style="width:14px;"></i> LinkedIn</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Optiyx. All rights reserved.</p>
-            <p>Empowering digital growth in the age of generative AI.</p>
+            <p>AI Visibility Intelligence</p>
         </div>
     </footer>
 
-</body>
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        }, { passive: true });
 
+        // Mobile nav toggle
+        const toggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            toggle.querySelector('i').className = navLinks.classList.contains('open')
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        });
+    </script>
+
+</body>
 </html>
