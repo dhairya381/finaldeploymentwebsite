@@ -8,15 +8,19 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-L8DS248VMG');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Optiyx | Investor Pitch Deck</title>
-    <meta name="description" content="Optiyx Pitch Deck. AI Visibility Intelligence — the new standard for measuring how AI systems perceive, recommend, and cite brands.">
+    <meta name="description" content="Optiyx Pitch Deck for Eureka E-Cell. Generative Engine Optimization (GEO) for AI Search.">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
+
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="application/ld+json">
     {
@@ -34,764 +38,270 @@
       }]
     }
     </script>
+    
     <style>
-        body { background-color: var(--bg-base); }
-
-        /* Slide section spacing override */
-        .slide + .slide { border-top: 1px solid var(--border-subtle); }
-
-        /* Slide-specific data layouts */
-        .problem-card-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1px;
-            background-color: var(--border);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            overflow: hidden;
-            margin-top: 48px;
+        .pitch-hero {
+            padding: 8rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle at center, rgba(0, 194, 232, 0.1) 0%, var(--bg-primary) 70%);
         }
-
-        .problem-card {
-            background-color: var(--bg-surface);
-            padding: 32px 28px;
+        .pitch-section {
+            padding: 5rem 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
-
-        .problem-card-num {
-            font-family: var(--font-mono);
-            font-size: 11px;
-            color: var(--text-faint);
-            letter-spacing: 0.08em;
-            margin-bottom: 16px;
-        }
-
-        .problem-card h3 {
-            font-size: 17px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 10px;
+        .pitch-section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
             color: var(--text-primary);
         }
-
-        .problem-card p {
-            font-size: 13.5px;
-            color: var(--text-muted);
-            line-height: 1.65;
+        .pitch-section-title span {
+            color: var(--accent-cyan);
         }
-
-        .layer-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1px;
-            background-color: var(--border);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            overflow: hidden;
-            margin-top: 48px;
+        .competitor-card {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 2rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin-bottom: 1.5rem;
         }
-
-        .layer-item {
-            background-color: var(--bg-surface);
-            padding: 24px 20px;
+        .revenue-box {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
             text-align: center;
+            transition: var(--transition-smooth);
         }
-
-        .layer-item-icon {
-            font-size: 20px;
-            color: var(--text-faint);
-            margin-bottom: 12px;
+        .revenue-box:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-5px);
         }
-
-        .layer-item-label {
-            font-size: 12px;
+        .highlight-text {
+            color: var(--accent-cyan);
             font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        .revenue-panel {
-            background-color: var(--bg-surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            padding: 28px;
-        }
-
-        .revenue-panel-label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--text-faint);
-            margin-bottom: 16px;
-        }
-
-        .revenue-panel h3 {
-            font-size: 18px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 10px;
-        }
-
-        .revenue-panel p {
-            font-size: 13px;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        .moat-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            margin-top: 40px;
-        }
-
-        .moat-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
-            padding: 24px 0;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .moat-item:last-child { border-bottom: none; }
-
-        .moat-num {
-            font-family: var(--font-mono);
-            font-size: 11px;
-            color: var(--text-faint);
-            letter-spacing: 0.06em;
-            flex-shrink: 0;
-            padding-top: 3px;
-        }
-
-        .moat-content h4 {
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 6px;
-        }
-
-        .moat-content p {
-            font-size: 13.5px;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* Pitch shift visual */
-        .pitch-shift {
-            display: grid;
-            grid-template-columns: 1fr 48px 1fr;
-            gap: 0;
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            overflow: hidden;
-            margin-top: 48px;
-        }
-
-        .pitch-shift-col {
-            padding: 36px 32px;
-            background-color: var(--bg-surface);
-        }
-
-        .pitch-shift-col.new {
-            background-color: var(--bg-elevated);
-        }
-
-        .pitch-shift-arrow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--bg-elevated);
-            border-left: 1px solid var(--border);
-            border-right: 1px solid var(--border);
-            color: var(--text-faint);
-        }
-
-        .pitch-shift-label {
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--text-faint);
-            margin-bottom: 12px;
-        }
-
-        .pitch-shift-title {
-            font-size: 22px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 20px;
-        }
-
-        .pitch-shift-col.new .pitch-shift-title {
-            color: var(--accent);
-        }
-
-        .pitch-shift-item {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .pitch-shift-item.new-item {
-            color: var(--text-secondary);
-        }
-
-        /* Dashboard in slide */
-        .slide-dashboard {
-            background-color: var(--bg-surface);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            overflow: hidden;
-            max-width: 580px;
-        }
-
-        /* Target audience */
-        .audience-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1px;
-            background-color: var(--border);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            overflow: hidden;
-            margin-top: 40px;
-        }
-
-        .audience-card {
-            background-color: var(--bg-surface);
-            padding: 32px 28px;
-        }
-
-        .audience-card-label {
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--text-faint);
-            margin-bottom: 16px;
-        }
-
-        .audience-card h3 {
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 10px;
-        }
-
-        .audience-card p {
-            font-size: 13.5px;
-            color: var(--text-muted);
-            line-height: 1.65;
-        }
-
-        @media (max-width: 768px) {
-            .problem-card-grid { grid-template-columns: 1fr; }
-            .layer-grid { grid-template-columns: repeat(3, 1fr); }
-            .pitch-shift { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
-            .pitch-shift-arrow { height: 40px; border: none; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-            .audience-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 
-<body class="pitch-body">
+<body>
 
-    <!-- Pitch Navigation -->
-    <nav class="pitch-nav" aria-label="Pitch deck navigation">
-        <a href="./index.html" class="pitch-nav-back">
-            <i class="fa-solid fa-arrow-left" style="font-size:11px;"></i>
-            Optiyx
+    <!-- Header Navigation -->
+    <header class="header-nav" id="main-nav">
+        <a href="./index.html" class="logo">
+            <div class="logo-icon">O</div>
+            <span>Optiyx</span>
         </a>
-        <span class="pitch-nav-title" id="pitch-slide-counter">Slide 1 / 10</span>
-    </nav>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./methodology.html" class="nav-item">Methodology</a></li>
+                <li><a href="./blog.html" class="nav-item">Blog</a></li>
+                <li><a href="./pitchdeck.html" class="nav-item" style="color: var(--text-primary); font-weight: 700;">Pitch Deck</a></li>
+                <li><a href="./faq.html" class="btn-cyan">Deep Dive</a></li>
+                <li><a href="./newanalysis.html" class="btn-bordered"
+                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Progress Bar -->
-    <div class="pitch-progress">
-        <div class="pitch-progress-bar" id="pitch-progress-bar" style="width:10%;"></div>
-    </div>
+    <!-- Pitch Hero -->
+    <section class="pitch-hero">
+        <div class="hero-glow"></div>
+        <h4 style="color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">Eureka E-Cell Submission</h4>
+        <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem;">Optiyx <span>Pitch Deck</span></h1>
+        <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+            Pioneering the transition from search engine indexing to generative AI citations. We bridge the gap between diagnostic observation and actionable AI remediation.
+        </p>
+    </section>
 
-    <main class="pitch-slides">
+    <!-- 1. The Problem -->
+    <section class="pitch-section container" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="pitch-section-title">The <span>Problem</span></h2>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
+            There is a massive shift from Google searches to AI-driven tools. Companies face a massive new challenge: <strong class="highlight-text">AI Invisibility</strong>. Traditional SEO rules no longer guarantee that a brand will be cited or recommended in AI answers.
+        </p>
+        
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-keyboard"></i></span>
+                <h3>Manual Search Checks</h3>
+                <p>Marketing teams waste hours typing random prompts into ChatGPT and Perplexity to manually check if their brand gets mentioned.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <h3>Outdated SEO Tools</h3>
+                <p>Companies keep paying for standard SEO platforms to track keyword rankings, failing to see why their organic traffic is dropping.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                <h3>Guesswork Content</h3>
+                <p>Content creators push out generic blogs and FAQs hoping AI crawlers pick them up, operating without any clear data.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- ══════════════════════════════
-             SLIDE 01 — COVER
-             ══════════════════════════════ -->
-        <section class="slide slide-cover" id="slide-1" aria-label="Cover slide">
-            <div class="slide-inner">
-                <div class="slide-num">OPTIYX · 2026 · EUREKA E-CELL SUBMISSION</div>
-                <div class="slide-eyebrow">AI Visibility Intelligence</div>
-                <h1 class="slide-title" style="max-width:720px;">
-                    The new search result<br>is an answer.
-                </h1>
-                <p class="slide-subtitle">
-                    Optiyx helps companies understand how AI systems perceive, retrieve, recommend, and cite their brand — and what to do about it.
-                </p>
-                <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-                    <a href="./newanalysis.html" class="btn-primary" id="pitch-cta"
-                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')"
-                        style="font-size:13px;padding:9px 20px;">
-                        Start Analysis
-                    </a>
-                    <span style="font-size:12px;color:var(--text-muted);font-family:var(--font-mono);">founders@optiyx.com</span>
+    <!-- 2. Target Audience -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Target <span>Customers</span></h2>
+        <div class="grid-2">
+            <div class="card" style="text-align: center;">
+                <div class="card-icon-briefcase" style="margin: 0 auto 1.5rem auto;"><i class="fa-solid fa-building"></i></div>
+                <h3>B2B / Agencies</h3>
+                <p>Website or software developing companies use our consultancy services and implement it on their customers' products (partnership/subscription model).</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="card-icon-briefcase" style="margin: 0 auto 1.5rem auto;"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>B2C / Enterprises</h3>
+                <p>Companies audit their own product to note what should be changed and implemented. Future vision includes doing the implementation job rather than sole consultancy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Technological Innovation & IP -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Technological <span>Innovation & IP</span></h2>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
+            Optiyx's innovation lies in its <strong class="highlight-text">Real-Time Site Crawler & Automated Remediation Architecture</strong>. We evaluate how Generative AI models parse, contextualize, and retrieve brand data.
+        </p>
+        
+        <div class="sequence-container">
+            <div class="sequence-step">
+                <div class="sequence-number"><i class="fa-solid fa-bolt"></i></div>
+                <div class="sequence-content">
+                    <h3>Diagnostic-to-Action Automation</h3>
+                    <p>Competitors act as observability platforms—generating graphs of missing citations while leaving execution to guesswork. Optiyx automatically converts audit findings into explicit code snippets, tailored JSON-LD schema updates, and direct technical fixes.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- ══════════════════════════════
-             SLIDE 02 — THE SHIFT
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-2" aria-label="The Shift">
-            <div class="slide-inner">
-                <div class="slide-num">02 / 10</div>
-                <div class="slide-eyebrow">The Shift</div>
-                <h2 class="slide-title">Google ranks you.<br>AI <em style="font-style:normal;color:var(--text-secondary);">recommends</em> you.</h2>
-                <p class="slide-subtitle" style="max-width:520px;">The search layer has fundamentally changed. The question is no longer "where do we rank?" — it's "are we being recommended?"</p>
-
-                <div class="pitch-shift">
-                    <div class="pitch-shift-col">
-                        <div class="pitch-shift-label">Before — Search</div>
-                        <div class="pitch-shift-title">10 links</div>
-                        <div class="pitch-shift-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--text-faint);"></i> User searches Google</div>
-                        <div class="pitch-shift-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--text-faint);"></i> Sees 10 ranked results</div>
-                        <div class="pitch-shift-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--text-faint);"></i> Clicks a link → visits site</div>
-                        <div class="pitch-shift-item" style="margin-top:16px;color:var(--text-faint);"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--text-faint);"></i> Optimized with SEO</div>
-                        <div class="pitch-shift-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--text-faint);"></i> Tracked by analytics</div>
-                        <div class="pitch-shift-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--text-faint);"></i> Measured by rankings</div>
-                    </div>
-                    <div class="pitch-shift-arrow">
-                        <i class="fa-solid fa-arrow-right" style="font-size:14px;"></i>
-                    </div>
-                    <div class="pitch-shift-col new">
-                        <div class="pitch-shift-label">Now — AI Answers</div>
-                        <div class="pitch-shift-title">1 answer</div>
-                        <div class="pitch-shift-item new-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--accent);"></i> User asks ChatGPT / Gemini</div>
-                        <div class="pitch-shift-item new-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--accent);"></i> Gets one synthesized answer</div>
-                        <div class="pitch-shift-item new-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--accent);"></i> A brand is cited — or isn't</div>
-                        <div class="pitch-shift-item new-item" style="margin-top:16px;"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--accent);"></i> Optimized with GEO</div>
-                        <div class="pitch-shift-item new-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--accent);"></i> Measured by AI visibility</div>
-                        <div class="pitch-shift-item new-item"><i class="fa-solid fa-circle" style="font-size:3px;color:var(--accent);"></i> Tracked by citation share</div>
-                    </div>
+            <div class="sequence-step">
+                <div class="sequence-number"><i class="fa-solid fa-microchip"></i></div>
+                <div class="sequence-content">
+                    <h3>Full-Stack Site & Crawler Audits</h3>
+                    <p>Rather than relying solely on scraping pre-indexed prompt databases, Optiyx inspects a site's underlying technical architecture, entity relationships, server-side renderability, and structured metadata to fix why an LLM crawler skips a site.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- ══════════════════════════════
-             SLIDE 03 — THE PROBLEM
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-3" aria-label="The Problem">
-            <div class="slide-inner">
-                <div class="slide-num">03 / 10</div>
-                <div class="slide-eyebrow">The Problem</div>
-                <h2 class="slide-title" style="max-width:680px;">
-                    Companies can measure where Google ranks them.<br>
-                    <span style="color:var(--text-secondary);">They cannot measure where AI recommends them.</span>
-                </h2>
-
-                <div class="problem-card-grid">
-                    <div class="problem-card">
-                        <div class="problem-card-num">01</div>
-                        <h3>Manual Search Checks</h3>
-                        <p>Marketing teams spend hours typing prompts into ChatGPT and Perplexity to manually check if their brand gets mentioned. There is no systematic measurement.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-card-num">02</div>
-                        <h3>Outdated SEO Tools</h3>
-                        <p>Companies pay for keyword ranking platforms while organic traffic drops and AI answers capture the intent. The tools measure the wrong channel.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-card-num">03</div>
-                        <h3>Guesswork Content</h3>
-                        <p>Content teams publish blogs and FAQs hoping AI crawlers pick them up — with no data on what AI systems actually cite, prefer, or retrieve from their domain.</p>
-                    </div>
+            <div class="sequence-step">
+                <div class="sequence-number"><i class="fa-solid fa-robot"></i></div>
+                <div class="sequence-content">
+                    <h3>Agentic Readiness Evaluation</h3>
+                    <p>Goes beyond conversational search (GEO) to evaluate whether a brand's structured data is readable and executable for autonomous AI agents performing real-world transactions.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ══════════════════════════════
-             SLIDE 04 — THE PRODUCT
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-4" aria-label="The Product">
-            <div class="slide-inner">
-                <div class="slide-num">04 / 10</div>
-                <div class="slide-eyebrow">The Product</div>
-                <div class="grid-7-5" style="gap:48px;align-items:center;">
-                    <div>
-                        <h2 class="slide-title" style="font-size:clamp(28px,4vw,52px);">
-                            An AI visibility intelligence system.
-                        </h2>
-                        <p style="font-size:15px;color:var(--text-secondary);line-height:1.7;margin-bottom:32px;max-width:480px;">
-                            Optiyx runs systematic queries across AI engines and returns a complete picture: who's mentioned, who's cited, who's recommended — and why.
-                        </p>
-                        <div style="display:flex;flex-direction:column;gap:14px;">
-                            <div style="display:flex;align-items:flex-start;gap:14px;">
-                                <span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:6px;"></span>
-                                <div>
-                                    <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:3px;">Query-level visibility</div>
-                                    <div style="font-size:13px;color:var(--text-muted);">Which prompts mention you vs. competitors across ChatGPT, Gemini, Claude.</div>
-                                </div>
-                            </div>
-                            <div style="display:flex;align-items:flex-start;gap:14px;">
-                                <span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:6px;"></span>
-                                <div>
-                                    <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:3px;">Source intelligence</div>
-                                    <div style="font-size:13px;color:var(--text-muted);">Which URLs are being cited and why they're considered authoritative.</div>
-                                </div>
-                            </div>
-                            <div style="display:flex;align-items:flex-start;gap:14px;">
-                                <span style="width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:6px;"></span>
-                                <div>
-                                    <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:3px;">Actionable remediation</div>
-                                    <div style="font-size:13px;color:var(--text-muted);">Specific schema updates, content rewrites, and structural fixes — not just graphs.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-dashboard">
-                        <div class="dashboard-bar">
-                            <div class="dashboard-dot"></div>
-                            <div class="dashboard-dot"></div>
-                            <div class="dashboard-dot"></div>
-                            <span class="dashboard-title-text">OPTIYX / ANALYSIS REPORT</span>
-                        </div>
-                        <div class="dashboard-body">
-                            <div class="dashboard-query-row">
-                                <span class="dashboard-query-label">Query</span>
-                                <span class="dashboard-query-text">"best SaaS accounting platform"</span>
-                            </div>
-                            <div class="dashboard-engines">
-                                <div class="dashboard-engine-card">
-                                    <div class="dashboard-engine-name">ChatGPT</div>
-                                    <div class="dashboard-engine-score accent">81%</div>
-                                    <div class="dashboard-engine-status">Cited</div>
-                                </div>
-                                <div class="dashboard-engine-card">
-                                    <div class="dashboard-engine-name">Gemini</div>
-                                    <div class="dashboard-engine-score accent">79%</div>
-                                    <div class="dashboard-engine-status">Cited</div>
-                                </div>
-                                <div class="dashboard-engine-card">
-                                    <div class="dashboard-engine-name">Claude</div>
-                                    <div class="dashboard-engine-score accent">84%</div>
-                                    <div class="dashboard-engine-status">Cited</div>
-                                </div>
-                            </div>
-                            <div class="dashboard-divider"></div>
-                            <div class="dashboard-row">
-                                <span class="dashboard-row-label">Citation source</span>
-                                <span class="dashboard-row-value success">yourbrand.com/features</span>
-                            </div>
-                            <div class="dashboard-row">
-                                <span class="dashboard-row-label">Entity strength</span>
-                                <span class="dashboard-row-value accent">Strong</span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- 4. Competitor Landscape -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Competitor <span>Landscape</span></h2>
+        <div class="grid-2">
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);"><i class="fa-solid fa-crosshairs" style="color: var(--accent-cyan); margin-right: 10px;"></i>Direct Competitors</h3>
+                <div class="competitor-card">
+                    <h4>Dedicated GEO Platforms</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Profound, Cognizo, Rankscale, AthenaHQ. Pure-play tools monitoring brand citations, share of voice, and prompt volume.</p>
+                </div>
+                <div class="competitor-card">
+                    <h4>Lightweight Mention Trackers</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Hall, WorkDuo.ai. Entry-level SaaS solutions offering multi-model visibility tracking tailored for SMBs and marketing agencies.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- ══════════════════════════════
-             SLIDE 05 — HOW IT WORKS
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-5" aria-label="How it works">
-            <div class="slide-inner">
-                <div class="slide-num">05 / 10</div>
-                <div class="slide-eyebrow">Methodology</div>
-                <h2 class="slide-title">Discover → Observe<br>→ Explain → Optimize</h2>
-                <p class="slide-subtitle" style="max-width:520px;">Four stages. Systematic. Repeatable. Each cycle improves citation probability across AI engines.</p>
-
-                <div class="method-horizontal" style="margin-top:48px;">
-                    <div class="method-card">
-                        <span class="method-num">01</span>
-                        <div class="method-name">Discover</div>
-                        <p class="method-desc">Map the query space. Identify categories, entities, and competitor terms where AI systems form recommendations about your market.</p>
-                    </div>
-                    <div class="method-card">
-                        <span class="method-num">02</span>
-                        <div class="method-name">Observe</div>
-                        <p class="method-desc">Run systematic prompts across ChatGPT, Gemini, and Claude. Record who is cited, mentioned, and recommended — and who is ignored.</p>
-                    </div>
-                    <div class="method-card">
-                        <span class="method-num">03</span>
-                        <div class="method-name">Explain</div>
-                        <p class="method-desc">Trace citations to sources. Identify what makes competitors more citable — authority gaps, content gaps, entity gaps.</p>
-                    </div>
-                    <div class="method-card">
-                        <span class="method-num">04</span>
-                        <div class="method-name">Optimize</div>
-                        <p class="method-desc">Translate findings into specific content changes, schema markup, and structural fixes — delivered as actionable reports, not just dashboards.</p>
-                    </div>
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);"><i class="fa-solid fa-ghost" style="color: var(--text-muted); margin-right: 10px;"></i>Indirect Competitors</h3>
+                <div class="competitor-card" style="border-left-color: var(--text-muted);">
+                    <h4>Legacy SEO Platforms</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Semrush, Ahrefs, SE Ranking. Established SEO suites incorporating AI overview tracking to retain users.</p>
+                </div>
+                <div class="competitor-card" style="border-left-color: var(--text-muted);">
+                    <h4>GEO Agencies & PR Consultants</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">TripleDart, iPullRank. Boutique agencies delivering high-touch, manual AI visibility audits for enterprise clients.</p>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="cta-callout" style="margin-top: 2rem;">
+            <h3>Our Differentiation</h3>
+            <p>While Ahrefs and Profound monitor LLM prompts and provide visibility graphs, Optiyx differentiates itself by combining automated URL scraping, sentiment analysis, and action-oriented GEO audit reports into an accessible <strong>SaaS-plus-consulting hybrid model</strong> built for SMBs and growing agencies.</p>
+        </div>
+    </section>
 
-        <!-- ══════════════════════════════
-             SLIDE 06 — THE INTELLIGENCE LAYER
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-6" aria-label="The Intelligence Layer">
-            <div class="slide-inner">
-                <div class="slide-num">06 / 10</div>
-                <div class="slide-eyebrow">The Intelligence Layer</div>
-                <h2 class="slide-title" style="max-width:600px;">What Optiyx measures</h2>
-                <p class="slide-subtitle" style="max-width:540px;">AI visibility is not a single number. It is a structured intelligence layer built from five interconnected signals.</p>
-
-                <div class="layer-grid">
-                    <div class="layer-item">
-                        <div class="layer-item-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <div class="layer-item-label">Queries</div>
-                    </div>
-                    <div class="layer-item">
-                        <div class="layer-item-icon"><i class="fa-solid fa-tag"></i></div>
-                        <div class="layer-item-label">Entities</div>
-                    </div>
-                    <div class="layer-item">
-                        <div class="layer-item-icon"><i class="fa-solid fa-link"></i></div>
-                        <div class="layer-item-label">Sources</div>
-                    </div>
-                    <div class="layer-item">
-                        <div class="layer-item-icon"><i class="fa-solid fa-quote-right"></i></div>
-                        <div class="layer-item-label">Citations</div>
-                    </div>
-                    <div class="layer-item">
-                        <div class="layer-item-icon"><i class="fa-solid fa-arrows-left-right"></i></div>
-                        <div class="layer-item-label">Competitors</div>
-                    </div>
-                </div>
-
-                <div class="grid-3" style="margin-top:32px;">
-                    <div class="surface" style="padding:20px;">
-                        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);margin-bottom:10px;">Queries</div>
-                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">The exact prompts users type into AI systems. Optiyx tests brand-relevant queries systematically, not randomly.</p>
-                    </div>
-                    <div class="surface" style="padding:20px;">
-                        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);margin-bottom:10px;">Sources &amp; Citations</div>
-                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">The URLs AI systems cite. Understanding which pages are cited — and why — reveals what AI models treat as authoritative.</p>
-                    </div>
-                    <div class="surface" style="padding:20px;">
-                        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);margin-bottom:10px;">Competitor Signals</div>
-                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">Who is cited instead of you, which pages win, and why — giving you a precise competitive intelligence layer.</p>
-                    </div>
-                </div>
+    <!-- 5. Business Model -->
+    <section class="pitch-section container">
+        <h2 class="pitch-section-title">Revenue & <span>Growth</span></h2>
+        
+        <h3 style="text-align: center; margin-bottom: 2rem;">Revenue Model</h3>
+        <div class="grid-2">
+            <div class="revenue-box">
+                <i class="fa-solid fa-layer-group" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Tiered SaaS Subscriptions</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Recurring monthly/annual plans based on audit volume, tracked domain limits, and report frequency.</p>
             </div>
-        </section>
-
-        <!-- ══════════════════════════════
-             SLIDE 07 — DIFFERENTIATION
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-7" aria-label="Differentiation">
-            <div class="slide-inner">
-                <div class="slide-num">07 / 10</div>
-                <div class="slide-eyebrow">Competitive Landscape</div>
-                <h2 class="slide-title" style="max-width:640px;">Observe + Explain + Fix.<br><span style="color:var(--text-secondary);">Not just observe.</span></h2>
-                <p class="slide-subtitle" style="max-width:520px;">Competitors like Profound and Ahrefs provide visibility graphs. Optiyx combines measurement with diagnostic-to-action automation.</p>
-
-                <div class="data-table-wrap" style="margin-top:40px;">
-                    <table class="diff-table" aria-label="Competitor differentiation">
-                        <thead>
-                            <tr>
-                                <th>Capability</th>
-                                <th>Legacy SEO Tools</th>
-                                <th>Observation Platforms</th>
-                                <th style="color:var(--accent);">Optiyx</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>AI brand mention tracking</td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                            </tr>
-                            <tr>
-                                <td>Multi-engine coverage</td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                            </tr>
-                            <tr>
-                                <td>Citation source analysis</td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                            </tr>
-                            <tr>
-                                <td>Why competitor wins</td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                            </tr>
-                            <tr class="optiyx-row">
-                                <td>Actionable remediation (schema, content, structure)</td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                            </tr>
-                            <tr>
-                                <td>SMB + Agency accessible pricing</td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                                <td><span class="check-no"><i class="fa-solid fa-minus"></i></span></td>
-                                <td><span class="check-yes"><i class="fa-solid fa-check"></i></span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="revenue-box">
+                <i class="fa-solid fa-handshake" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Enterprise Audits & Consulting</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Fixed-fee, deep-dive baseline audits combined with high-margin strategic advisory for custom fixes.</p>
             </div>
-        </section>
+        </div>
 
-        <!-- ══════════════════════════════
-             SLIDE 08 — TARGET CUSTOMERS
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-8" aria-label="Target Customers">
-            <div class="slide-inner">
-                <div class="slide-num">08 / 10</div>
-                <div class="slide-eyebrow">Target Customers</div>
-                <h2 class="slide-title">Who needs this</h2>
-                <p class="slide-subtitle" style="max-width:500px;">Any company that competes in categories where AI systems are beginning to form recommendations.</p>
-
-                <div class="audience-grid">
-                    <div class="audience-card">
-                        <div class="audience-card-label">Segment A — B2B / Agencies</div>
-                        <h3>Digital Agencies</h3>
-                        <p>Website and software agencies use Optiyx as a consultancy layer — adding AI visibility audits to client engagements through a partnership or white-label subscription model.</p>
-                        <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border);">
-                            <div style="font-size:12px;color:var(--text-faint);margin-bottom:8px;">USE CASE</div>
-                            <div style="font-size:13px;color:var(--text-muted);">Agency adds Optiyx GEO audit to existing SEO retainer. Reports AI visibility score alongside traditional rankings.</div>
-                        </div>
-                    </div>
-                    <div class="audience-card">
-                        <div class="audience-card-label">Segment B — B2C / Enterprise</div>
-                        <h3>Growth-stage companies</h3>
-                        <p>Companies audit their own brand's AI presence — understanding citation gaps, competitor advantages, and structural weaknesses in their content before AI recommendations solidify.</p>
-                        <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border);">
-                            <div style="font-size:12px;color:var(--text-faint);margin-bottom:8px;">USE CASE</div>
-                            <div style="font-size:13px;color:var(--text-muted);">SaaS company discovers competitor has 3× citation share on key queries. Optiyx identifies which pages to create and which schema to deploy.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="margin-top:20px;padding:20px 28px;background-color:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-lg);display:flex;align-items:center;gap:20px;">
-                    <i class="fa-solid fa-scale-balanced" style="color:var(--text-muted);font-size:18px;flex-shrink:0;"></i>
-                    <div>
-                        <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">Law Firms — Specialized Vertical</div>
-                        <div style="font-size:13px;color:var(--text-muted);">Legal queries are increasingly answered by AI. Law firms need their expertise structured with Q&amp;A, cited statistics, and robust legal schema that AI models recognize as authoritative.</div>
-                    </div>
-                </div>
+        <h3 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">Future Growth Opportunities</h3>
+        <div class="grid-3">
+            <div class="card">
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Agency White-Labeling</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">Enabling digital agencies to rebrand and resell automated GEO audits directly to their clients.</p>
             </div>
-        </section>
-
-        <!-- ══════════════════════════════
-             SLIDE 09 — REVENUE MODEL
-             ══════════════════════════════ -->
-        <section class="slide" id="slide-9" aria-label="Revenue Model">
-            <div class="slide-inner">
-                <div class="slide-num">09 / 10</div>
-                <div class="slide-eyebrow">Business Model</div>
-                <h2 class="slide-title">Revenue &amp; Growth</h2>
-                <p class="slide-subtitle" style="max-width:520px;">A SaaS-plus-consulting hybrid designed for SMBs and growing agencies — accessible at entry, valuable at scale.</p>
-
-                <div class="grid-2" style="margin-top:40px;gap:16px;">
-                    <div class="revenue-panel">
-                        <div class="revenue-panel-label">Revenue stream 01</div>
-                        <h3>Tiered SaaS Subscriptions</h3>
-                        <p>Recurring monthly and annual plans based on audit volume, tracked domain limits, and report frequency. Accessible for SMBs; scales for enterprise.</p>
-                    </div>
-                    <div class="revenue-panel">
-                        <div class="revenue-panel-label">Revenue stream 02</div>
-                        <h3>Enterprise Audits &amp; Consulting</h3>
-                        <p>Fixed-fee, deep-dive baseline audits combined with high-margin strategic advisory for custom content fixes and schema implementation.</p>
-                    </div>
-                </div>
-
-                <div style="margin-top:20px;">
-                    <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;">Future growth paths</div>
-                    <div class="grid-3" style="gap:12px;">
-                        <div style="padding:16px 18px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
-                            <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">Agency White-Labeling</div>
-                            <div style="font-size:12px;color:var(--text-muted);">Digital agencies rebrand and resell GEO audits to their own clients.</div>
-                        </div>
-                        <div style="padding:16px 18px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
-                            <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">Automated Remediation</div>
-                            <div style="font-size:12px;color:var(--text-muted);">Auto-generating schema markup and AI-optimized content — from diagnostic to fix.</div>
-                        </div>
-                        <div style="padding:16px 18px;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-md);">
-                            <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">Analytics Integrations</div>
-                            <div style="font-size:12px;color:var(--text-muted);">Connect AI visibility directly to CMS, Search Console, and web conversions.</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Automated Remediation</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">Upgrading from diagnostic reports to auto-generating schema markup and AI-optimized content updates.</p>
             </div>
-        </section>
-
-        <!-- ══════════════════════════════
-             SLIDE 10 — CLOSE
-             ══════════════════════════════ -->
-        <section class="slide slide-cover" id="slide-10" aria-label="Closing slide">
-            <div class="slide-inner">
-                <div class="slide-num">10 / 10</div>
-                <div style="max-width:640px;">
-                    <div style="font-family:var(--font-display);font-size:clamp(11px,1.5vw,13px);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:24px;">
-                        Optiyx · 2026
-                    </div>
-                    <h2 style="font-family:var(--font-display);font-size:clamp(36px,6vw,72px);font-weight:600;letter-spacing:-0.04em;line-height:1.05;color:var(--text-primary);margin-bottom:24px;">
-                        Know how AI sees your brand.
-                    </h2>
-                    <p style="font-size:16px;color:var(--text-secondary);line-height:1.7;margin-bottom:40px;max-width:480px;">
-                        AI visibility is becoming a standard marketing metric. The companies measuring it today are building the advantage that will be impossible to close tomorrow.
-                    </p>
-                    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-                        <a href="./newanalysis.html" class="btn-primary" id="pitch-close-cta"
-                            onclick="sessionStorage.setItem('optiyx_analysis_auth','1')"
-                            style="font-size:14px;padding:10px 24px;">
-                            Start Analysis
-                        </a>
-                        <a href="mailto:founders@optiyx.com" class="btn-ghost" id="pitch-contact" style="font-size:13px;">
-                            founders@optiyx.com
-                        </a>
-                    </div>
-                    <div style="margin-top:48px;display:flex;align-items:center;gap:24px;">
-                        <a href="https://www.linkedin.com/company/optiyx/about/" target="_blank" rel="noopener"
-                           style="font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:6px;transition:color var(--t-fast);"
-                           onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-muted)'">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-                        <span style="color:var(--text-faint);font-size:12px;">optiyx.com</span>
-                    </div>
-                </div>
+            <div class="card">
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Analytics Integrations</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">Connecting directly with CMS and Search Console data to correlate AI visibility directly with web conversions.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <script>
-        // Progress tracking based on scroll position
-        function updateProgress() {
-            const slides = document.querySelectorAll('.slide');
-            const total = slides.length;
-            const scrollY = window.scrollY;
-            const winH = window.innerHeight;
-            const docH = document.documentElement.scrollHeight - winH;
-            const progress = Math.min((scrollY / docH) * 100, 100);
-
-            document.getElementById('pitch-progress-bar').style.width = progress + '%';
-
-            // Find current visible slide
-            let currentSlide = 1;
-            slides.forEach((slide, i) => {
-                const rect = slide.getBoundingClientRect();
-                if (rect.top <= winH * 0.5) currentSlide = i + 1;
-            });
-            document.getElementById('pitch-slide-counter').textContent = 'Slide ' + currentSlide + ' / ' + total;
-        }
-
-        window.addEventListener('scroll', updateProgress, { passive: true });
-        updateProgress();
-    </script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <div class="logo-icon"
+                        style="width: 26px; height: 26px; font-size: 14px; border-radius: 6px; box-shadow: none;">O
+                    </div>
+                    <span>Optiyx</span>
+                </div>
+                <p style="margin-bottom: 1.5rem;">Leading the transition from search engine indexing to generative AI
+                    citations. Future-proof your search presence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start
+                            Analysis</a></li>
+                    <li><a href="./methodology.html">Methodology</a></li>
+                    <li><a href="./pitchdeck.html">Pitch Deck</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:founders@optiyx.com"><i class="fa-solid fa-envelope"></i> Email Us</a></li>
+                    <li><a href="https://www.linkedin.com/company/optiyx/about/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Optiyx. All rights reserved.</p>
+            <p>Empowering digital growth in the age of generative AI.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

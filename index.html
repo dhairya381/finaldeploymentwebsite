@@ -8,10 +8,12 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-L8DS248VMG');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!-- Primary SEO -->
     <title>Generative Engine Optimization | AI Search Optimisation Agency - Optiyx</title>
@@ -23,7 +25,7 @@
     <meta name="author" content="Optiyx">
     <link rel="canonical" href="https://optiyx.com/">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Facebook / LinkedIn) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://optiyx.com/">
     <meta property="og:site_name" content="Optiyx">
@@ -112,665 +114,212 @@
 
     <link rel="icon" href="favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
+
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ════════════════════════════════════════════════════
-         01 — NAVIGATION
-         ════════════════════════════════════════════════════ -->
+    <!-- Header Navigation -->
     <header class="header-nav" id="main-nav">
-        <a href="./index.html" class="logo" aria-label="Optiyx home">
+        <a href="./index.html" class="logo">
             <div class="logo-icon">O</div>
-            <span class="logo-name">Optiyx</span>
+            <span>Optiyx</span>
         </a>
         <nav>
-            <ul class="nav-links" id="nav-links">
+            <ul class="nav-links">
                 <li><a href="./methodology.html" class="nav-item">Methodology</a></li>
-                <li><a href="./blog.html" class="nav-item">Research</a></li>
+                <li><a href="./blog.html" class="nav-item">Blog</a></li>
                 <li><a href="./pitchdeck.html" class="nav-item">Pitch Deck</a></li>
+                <li><a href="./faq.html" class="btn-cyan">Deep Dive</a></li>
+                <li><a href="./newanalysis.html" class="btn-bordered"
+                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a></li>
             </ul>
         </nav>
-        <div class="nav-right">
-            <a href="./newanalysis.html" class="btn-primary" id="nav-new-analysis"
-                onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">New Analysis</a>
-        </div>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-        </button>
     </header>
 
-    <!-- ════════════════════════════════════════════════════
-         02 — HERO
-         ════════════════════════════════════════════════════ -->
-    <section class="hero-section" aria-labelledby="hero-heading">
-        <div class="container">
-            <div class="hero-layout">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <h1>Dominate the <span>AI Search Era</span></h1>
+        <p>Optiyx analyzes and structures your website content so AI engines like Gemini, ChatGPT, and Claude select and
+            cite your business when answering user queries.</p>
+        <a href="./newanalysis.html" class="btn-cyan" style="font-size: 1rem; padding: 0.75rem 2.25rem;"
+            onclick="sessionStorage.setItem('optiyx_analysis_auth','1')"><i
+                class="fa-solid fa-magnifying-glass-chart"></i> Optimize for AI Now</a>
+    </section>
 
-                <!-- Left: Copy -->
-                <div class="hero-left">
-                    <div class="hero-eyebrow">AI Visibility Intelligence</div>
-                    <h1 class="hero-headline" id="hero-heading">
-                        The new search<br>
-                        result is <em>an answer.</em>
-                    </h1>
-                    <p class="hero-body">
-                        Optiyx measures how AI systems — ChatGPT, Gemini, Claude — perceive, retrieve, and cite your brand. Understand why competitors get recommended instead of you.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="./newanalysis.html" class="btn-primary" id="hero-cta"
-                            onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i>
-                            Start Analysis
-                        </a>
-                        <a href="./methodology.html" class="btn-ghost" id="hero-secondary">
-                            See the method
-                        </a>
-                    </div>
-                    <p class="hero-action-note">AI visibility audit · No account required</p>
-                </div>
+    <!-- Core Pitch: SEO vs GEO -->
+    <section class="container" style="padding-top: 1rem;">
+        <h2 style="text-align: center; font-size: 2.25rem; margin-bottom: 1rem;">SEO is Evolving into <span>GEO</span>
+        </h2>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem auto;">
+            Traditional search engine optimization ranked you based on keywords and page speed. Generative Engine
+            Optimization ranks you based on LLM readability, statistics, authority, and citation appeal.
+        </p>
 
-                <!-- Right: Product Dashboard -->
-                <div class="hero-dashboard" role="img" aria-label="Optiyx AI visibility dashboard preview">
-                    <div class="dashboard-bar">
-                        <div class="dashboard-dot"></div>
-                        <div class="dashboard-dot"></div>
-                        <div class="dashboard-dot"></div>
-                        <span class="dashboard-title-text">OPTIYX / AI VISIBILITY / LIVE ANALYSIS</span>
-                    </div>
-                    <div class="dashboard-body">
-                        <div class="dashboard-query-row">
-                            <span class="dashboard-query-label">Query</span>
-                            <span class="dashboard-query-text">"best accounting software for startups"</span>
-                        </div>
-
-                        <div class="dashboard-engines">
-                            <div class="dashboard-engine-card">
-                                <div class="dashboard-engine-name">ChatGPT</div>
-                                <div class="dashboard-engine-score accent">71%</div>
-                                <div class="dashboard-engine-status">Mentioned</div>
-                            </div>
-                            <div class="dashboard-engine-card">
-                                <div class="dashboard-engine-name">Gemini</div>
-                                <div class="dashboard-engine-score">58%</div>
-                                <div class="dashboard-engine-status">Partial</div>
-                            </div>
-                            <div class="dashboard-engine-card">
-                                <div class="dashboard-engine-name">Claude</div>
-                                <div class="dashboard-engine-score">63%</div>
-                                <div class="dashboard-engine-status">Mentioned</div>
-                            </div>
-                        </div>
-
-                        <div class="dashboard-divider"></div>
-
-                        <div class="dashboard-row">
-                            <span class="dashboard-row-label">Avg. AI Visibility</span>
-                            <span class="dashboard-row-value accent">64.0%</span>
-                        </div>
-                        <div class="dashboard-row">
-                            <span class="dashboard-row-label">Primary Citation</span>
-                            <span class="dashboard-row-value">yourbrand.com/pricing</span>
-                        </div>
-                        <div class="dashboard-row">
-                            <span class="dashboard-row-label">Competitor cited instead</span>
-                            <span class="dashboard-row-value danger">Competitor A — 41%</span>
-                        </div>
-
-                        <div class="dashboard-why-section">
-                            <div class="dashboard-why-label">Why you're being cited</div>
-                            <div class="dashboard-why-item positive">
-                                <i class="fa-solid fa-plus" style="font-size:9px;margin-top:2px;flex-shrink:0;"></i>
-                                Strong topical authority on pricing pages
-                            </div>
-                            <div class="dashboard-why-item positive">
-                                <i class="fa-solid fa-plus" style="font-size:9px;margin-top:2px;flex-shrink:0;"></i>
-                                High-quality structured FAQ data
-                            </div>
-                            <div class="dashboard-why-item negative">
-                                <i class="fa-solid fa-minus" style="font-size:9px;margin-top:2px;flex-shrink:0;"></i>
-                                Missing comparison content vs. competitors
-                            </div>
-                            <div class="dashboard-why-item negative">
-                                <i class="fa-solid fa-minus" style="font-size:9px;margin-top:2px;flex-shrink:0;"></i>
-                                Weak entity association with "startup" segment
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon-briefcase" style="background-color: var(--text-secondary); box-shadow: none;"><i
+                        class="fa-solid fa-arrow-down-z-a" style="color: var(--bg-primary);"></i></div>
+                <h3>Traditional SEO</h3>
+                <p>Focused on ranking links on page 1 of Google Search. Relies heavily on backlinks, keyword densities,
+                    and site structure to attract clicks.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon-briefcase"><i class="fa-solid fa-brain"></i></div>
+                <h3>Generative Engine Optimization</h3>
+                <p>Focused on being cited in conversational answers generated by AI assistants (Gemini, ChatGPT,
+                    Perplexity). Relies on citation mechanics, semantic authority, and factual structure.</p>
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════
-         03 — THE SHIFT
-         ════════════════════════════════════════════════════ -->
-    <section class="shift-section" aria-labelledby="shift-heading">
-        <div class="container">
+    <!-- Interactive/Sequenced GEO Methodology Roadmap -->
+    <section class="container">
+        <h2 style="text-align: center; font-size: 2.25rem; margin-bottom: 1rem;">The <span>Optiyx Methodology</span>
+        </h2>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem auto;">
+            We sequence our optimization process into four critical phases designed to maximize your citation
+            probability in AI search outputs.
+        </p>
 
-            <div class="section-meta">
-                <span class="section-index">/ 01</span>
-                <span class="eyebrow">The Shift</span>
-            </div>
-            <h2 id="shift-heading" style="font-size:clamp(26px,3.5vw,38px);letter-spacing:-0.025em;margin-bottom:40px;max-width:560px;">
-                The search layer has changed.
-            </h2>
-
-            <div class="shift-grid">
-                <div class="shift-col shift-col-old">
-                    <div class="shift-col-label">Before</div>
-                    <div class="shift-col-title">Search</div>
-
-                    <div class="shift-subhead">Result format</div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        10 ranked blue links
-                    </div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        User selects a result
-                    </div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Visits your website
-                    </div>
-
-                    <div class="shift-subhead">What you optimized for</div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Keyword rankings
-                    </div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Backlinks
-                    </div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Page speed &amp; crawlability
-                    </div>
-                    <div class="shift-item">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Click-through rates
-                    </div>
-                </div>
-
-                <div class="shift-arrow">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-
-                <div class="shift-col shift-col-new">
-                    <div class="shift-col-label">Now</div>
-                    <div class="shift-col-title">AI Answers</div>
-
-                    <div class="shift-subhead">Result format</div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        One synthesized answer
-                    </div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        AI recommends a brand
-                    </div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Brand cited or ignored
-                    </div>
-
-                    <div class="shift-subhead">What you now need to measure</div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Brand mentions &amp; citations
-                    </div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Source authority &amp; entity associations
-                    </div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Competitor citation share
-                    </div>
-                    <div class="shift-item shift-item-new">
-                        <span class="shift-icon"><i class="fa-solid fa-circle" style="font-size:4px;"></i></span>
-                        Query-level AI recommendations
-                    </div>
+        <div class="sequence-container">
+            <div class="sequence-step">
+                <div class="sequence-number">1</div>
+                <div class="sequence-content">
+                    <h3>Generative Engine Audit</h3>
+                    <p>We crawl and prompt AI models with queries related to your product category. This reveals whether
+                        your brand is mentioned, how the AI describes you, and who your competitors are in generative
+                        search answers.</p>
                 </div>
             </div>
 
+            <div class="sequence-step">
+                <div class="sequence-number">2</div>
+                <div class="sequence-content">
+                    <h3>FAQ & Q&A Structure Formatting</h3>
+                    <p>AI search models love structured Question-Answer pairings. We map common user inquiries into
+                        highly detailed, Schema-coded FAQ sections on your website, facilitating easy scraping and
+                        direct quotation by LLMs.</p>
+                </div>
+            </div>
+
+            <div class="sequence-step">
+                <div class="sequence-number">3</div>
+                <div class="sequence-content">
+                    <h3>Quantitative Evidence & Citation Signals</h3>
+                    <p>AI models prefer citing claims backed by specific statistical data. We rewrite landing pages to
+                        integrate hard numbers, expert citations, and clear source markers that models recognize as
+                        high-quality reference links.</p>
+                </div>
+            </div>
+
+            <div class="sequence-step">
+                <div class="sequence-number">4</div>
+                <div class="sequence-content">
+                    <h3>Schema & Technical Metadata</h3>
+                    <p>Deploying advanced JSON-LD structured data and semantic HTML tags. This guides crawler bots
+                        exactly to key statements, statistics, and definitions, making them highly extractable for AI
+                        summaries.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════
-         04 — THE PROBLEM
-         ════════════════════════════════════════════════════ -->
-    <section class="problem-section" aria-labelledby="problem-heading">
-        <div class="container">
-
-            <div class="section-meta">
-                <span class="section-index">/ 02</span>
-                <span class="eyebrow">The Intelligence Gap</span>
+    <!-- Feature Grid Section -->
+    <section class="container" style="padding-top: 1rem;">
+        <h2 style="text-align: center; font-size: 2.25rem; margin-bottom: 3rem;">Why Choose <span>Optiyx</span></h2>
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <h3>Future-Proof Traffic</h3>
+                <p>As organic search traffic transitions to conversational queries, Optiyx keeps your brand visible in
+                    generative summaries.</p>
             </div>
-
-            <div class="grid-7-5">
-                <div>
-                    <h2 id="problem-heading" style="font-size:clamp(26px,3.5vw,40px);letter-spacing:-0.028em;margin-bottom:16px;max-width:560px;">
-                        Your brand has a search ranking.<br>
-                        It doesn't have an AI visibility score.
-                    </h2>
-                    <p style="font-size:15px;color:var(--text-secondary);max-width:480px;line-height:1.7;margin-bottom:32px;">
-                        Companies measure Google rankings, website traffic, and click-through rates. But AI systems now answer millions of queries without sending users anywhere. That answer is invisible to traditional analytics.
-                    </p>
-                    <a href="./newanalysis.html" class="btn-ghost" id="problem-cta"
-                        onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">
-                        See your AI visibility
-                        <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
-                    </a>
-                </div>
-
-                <div>
-                    <div class="problem-questions">
-                        <div class="problem-question">
-                            <span>Does ChatGPT</span> recommend your brand?
-                        </div>
-                        <div class="problem-question">
-                            Which competitor does <span>Gemini mention</span> instead?
-                        </div>
-                        <div class="problem-question">
-                            Which <span>sources influence</span> the AI's answer?
-                        </div>
-                        <div class="problem-question">
-                            Why aren't you being <span>cited?</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-list-check"></i></span>
+                <h3>FAQ Generation</h3>
+                <p>Automatically structure complex industry concepts into clear, authoritative Q&A lists that capture
+                    LLM answer blocks.</p>
             </div>
-
+            <div class="card">
+                <span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <h3>Brand Control</h3>
+                <p>Monitor how your brand footprint is perceived by generative models, and take charge of what
+                    information they present.</p>
+            </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════
-         05 — QUERY PERFORMANCE TABLE
-         ════════════════════════════════════════════════════ -->
-    <section class="query-section" aria-labelledby="query-heading">
-        <div class="container">
-
-            <div class="section-meta">
-                <span class="section-index">/ 03</span>
-                <span class="eyebrow">Query Analysis</span>
-            </div>
-            <div class="section-header-row">
-                <h2 id="query-heading" style="font-size:clamp(22px,3vw,34px);letter-spacing:-0.025em;">
-                    Query-level AI visibility
-                </h2>
-                <span class="mono" style="font-size:11px;padding-bottom:4px;">
-                    Illustrative · Demo data
-                </span>
-            </div>
-            <p style="color:var(--text-muted);font-size:13.5px;margin-bottom:36px;max-width:560px;">
-                Optiyx tests your brand across real queries on ChatGPT, Gemini, and Claude. Every query returns a mention status, citation link, and competitor signal.
+    <!-- SEO Content Section -->
+    <section class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <h2 style="text-align: center; font-size: 2.25rem; margin-bottom: 2rem;">Leading the Era of <span>Generative Engine Optimization</span></h2>
+        
+        <div style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; max-width: 900px; margin: 0 auto;">
+            <p style="margin-bottom: 1.5rem;">
+                In today's rapidly evolving digital landscape, traditional search engine indexing is no longer enough. The future of online visibility lies in <strong>generative engine optimization</strong> (GEO). As leading search engines integrate large language models (LLMs) to deliver conversational answers, businesses must adapt their strategies to remain visible. Optiyx is a pioneering <strong>ai search optimisation agency</strong> dedicated to helping brands capture this new wave of traffic. We specialize in structuring your website's content so that AI assistants like Gemini, ChatGPT, and Claude naturally cite your business when responding to user queries.
+            </p>
+            
+            <p style="margin-bottom: 1.5rem;">
+                Our approach to <strong>ai search optimisation</strong> is built on advanced data analysis, semantic structuring, and citation mechanics. Whether you're a startup looking to establish authority or a well-established enterprise, our <strong>company aeo geo ai search optimisation services</strong> are designed to position your brand as the definitive answer in AI-generated summaries. Answer Engine Optimization (AEO) and GEO go hand in hand, focusing on clear, factual, and easily extractable information that AI models prioritize during their generation process.
+            </p>
+            
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Specialized AI Search Optimisation Company for Law Firms</h3>
+            <p style="margin-bottom: 1.5rem;">
+                While our methodologies apply across various industries, we have developed highly specialized strategies as an <strong>ai search optimisation company for law firms</strong>. The legal industry relies heavily on trust, authority, and precise information. AI search engines are increasingly answering complex legal queries by synthesizing information from highly authoritative sources. Optiyx ensures that your law firm's expertise is properly structured with Q&A formats, cited statistics, and robust legal precedents that AI models recognize as authoritative. By leveraging our GEO methodologies, your law firm can become the cited source when potential clients ask AI about legal advice, compliance, or representation.
             </p>
 
-            <div class="data-table-wrap">
-                <table class="data-table" aria-label="Query performance across AI engines">
-                    <thead>
-                        <tr>
-                            <th>Query</th>
-                            <th>ChatGPT</th>
-                            <th>Gemini</th>
-                            <th>Claude</th>
-                            <th>Avg. Visibility</th>
-                            <th>Top Competitor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="highlight">
-                            <td>best accounting software for startups</td>
-                            <td><span class="mention-yes">✓ Cited</span></td>
-                            <td><span class="mention-weak">△ Partial</span></td>
-                            <td><span class="mention-yes">✓ Cited</span></td>
-                            <td><span style="font-family:var(--font-mono);color:var(--accent);">64%</span></td>
-                            <td style="color:var(--text-muted);font-size:12px;">Competitor A</td>
-                        </tr>
-                        <tr>
-                            <td>accounting software alternatives</td>
-                            <td><span class="mention-weak">△ Partial</span></td>
-                            <td><span class="mention-no">— Not cited</span></td>
-                            <td><span class="mention-weak">△ Partial</span></td>
-                            <td><span style="font-family:var(--font-mono);color:var(--warning);">38%</span></td>
-                            <td style="color:var(--text-muted);font-size:12px;">Competitor B</td>
-                        </tr>
-                        <tr>
-                            <td>accounting software for small business India</td>
-                            <td><span class="mention-no">— Not cited</span></td>
-                            <td><span class="mention-no">— Not cited</span></td>
-                            <td><span class="mention-yes">✓ Cited</span></td>
-                            <td><span style="font-family:var(--font-mono);color:var(--danger);">21%</span></td>
-                            <td style="color:var(--text-muted);font-size:12px;">Competitor C</td>
-                        </tr>
-                        <tr>
-                            <td>best SaaS accounting platform</td>
-                            <td><span class="mention-yes">✓ Cited</span></td>
-                            <td><span class="mention-yes">✓ Cited</span></td>
-                            <td><span class="mention-yes">✓ Cited</span></td>
-                            <td><span style="font-family:var(--font-mono);color:var(--success);">81%</span></td>
-                            <td style="color:var(--text-muted);font-size:12px;">—</td>
-                        </tr>
-                        <tr>
-                            <td>cloud accounting software comparison</td>
-                            <td><span class="mention-weak">△ Partial</span></td>
-                            <td><span class="mention-weak">△ Partial</span></td>
-                            <td><span class="mention-no">— Not cited</span></td>
-                            <td><span style="font-family:var(--font-mono);color:var(--warning);">42%</span></td>
-                            <td style="color:var(--text-muted);font-size:12px;">Competitor A</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div style="display:flex;gap:20px;margin-top:16px;flex-wrap:wrap;">
-                <span style="display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--text-muted);">
-                    <span class="mention-yes">✓</span> Brand cited in answer
-                </span>
-                <span style="display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--text-muted);">
-                    <span class="mention-weak">△</span> Mentioned weakly / indirectly
-                </span>
-                <span style="display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--text-muted);">
-                    <span class="mention-no">—</span> Not mentioned
-                </span>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════
-         06 — COMPETITOR INTELLIGENCE
-         ════════════════════════════════════════════════════ -->
-    <section class="competitor-section" aria-labelledby="competitor-heading">
-        <div class="container">
-
-            <div class="section-meta">
-                <span class="section-index">/ 04</span>
-                <span class="eyebrow">Competitor Intelligence</span>
-            </div>
-
-            <div class="grid-7-5">
-
-                <div>
-                    <h2 id="competitor-heading" style="font-size:clamp(22px,3vw,34px);letter-spacing:-0.025em;margin-bottom:12px;">
-                        AI Citation Share
-                    </h2>
-                    <p style="color:var(--text-muted);font-size:13px;margin-bottom:36px;">
-                        Across all tracked queries · Illustrative demo data
-                    </p>
-
-                    <div class="comparison-bars" aria-label="AI citation share comparison">
-                        <div class="comparison-bar-row">
-                            <span class="comparison-bar-label you">Your Brand</span>
-                            <div class="comparison-bar-track">
-                                <div class="comparison-bar-fill you" style="width:18%;"></div>
-                            </div>
-                            <span class="comparison-bar-pct you">18%</span>
-                        </div>
-                        <div class="comparison-bar-row">
-                            <span class="comparison-bar-label">Competitor A</span>
-                            <div class="comparison-bar-track">
-                                <div class="comparison-bar-fill high" style="width:42%;"></div>
-                            </div>
-                            <span class="comparison-bar-pct">42%</span>
-                        </div>
-                        <div class="comparison-bar-row">
-                            <span class="comparison-bar-label">Competitor B</span>
-                            <div class="comparison-bar-track">
-                                <div class="comparison-bar-fill" style="width:27%;"></div>
-                            </div>
-                            <span class="comparison-bar-pct">27%</span>
-                        </div>
-                        <div class="comparison-bar-row">
-                            <span class="comparison-bar-label">Others</span>
-                            <div class="comparison-bar-track">
-                                <div class="comparison-bar-fill" style="width:13%;"></div>
-                            </div>
-                            <span class="comparison-bar-pct">13%</span>
-                        </div>
-                    </div>
-
-                    <div style="margin-top:32px;padding:20px;background-color:var(--bg-surface);border:1px solid var(--border);border-radius:var(--r-lg);">
-                        <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:8px;">Visibility</div>
-                        <div style="font-family:var(--font-display);font-size:40px;font-weight:600;letter-spacing:-0.04em;color:var(--text-primary);line-height:1;">18%</div>
-                        <div style="font-size:12px;font-family:var(--font-mono);color:var(--danger);margin-top:4px;display:flex;align-items:center;gap:4px;">
-                            <i class="fa-solid fa-arrow-down" style="font-size:9px;"></i>
-                            −3.2% vs last month
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:24px;">
-                        Why Competitor A wins
-                    </h3>
-                    <ul class="why-list">
-                        <li class="why-item">
-                            <span class="why-num">01</span>
-                            <div class="why-content">
-                                <h4>Stronger entity associations</h4>
-                                <p>Their brand is consistently linked to target categories across training-weight sources.</p>
-                            </div>
-                        </li>
-                        <li class="why-item">
-                            <span class="why-num">02</span>
-                            <div class="why-content">
-                                <h4>Higher source authority</h4>
-                                <p>Cited by more editorial and reference sites that AI models treat as high-credibility.</p>
-                            </div>
-                        </li>
-                        <li class="why-item">
-                            <span class="why-num">03</span>
-                            <div class="why-content">
-                                <h4>More comparison content</h4>
-                                <p>Their site answers comparison queries directly — the format AI models prefer to cite.</p>
-                            </div>
-                        </li>
-                        <li class="why-item">
-                            <span class="why-num">04</span>
-                            <div class="why-content">
-                                <h4>More frequently cited pages</h4>
-                                <p>Three pages appear in AI answers vs. one for your brand across the same query set.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════
-         07 — METHODOLOGY
-         ════════════════════════════════════════════════════ -->
-    <section class="method-section" aria-labelledby="method-heading">
-        <div class="container">
-
-            <div class="section-meta">
-                <span class="section-index">/ 05</span>
-                <span class="eyebrow">Methodology</span>
-            </div>
-            <h2 id="method-heading" style="font-size:clamp(22px,3vw,34px);letter-spacing:-0.025em;margin-bottom:8px;">
-                How Optiyx works
-            </h2>
-            <p style="color:var(--text-muted);font-size:14px;margin-bottom:0;">
-                Four stages. Systematic. Repeatable.
+            <p style="margin-bottom: 1.5rem;">
+                The mechanics of <strong>generative engine optimization</strong> differ significantly from traditional SEO. While traditional optimization relies heavily on backlinks and keyword density, modern AI systems prioritize semantic relevance, logical structure, and verifiable facts. Our <strong>ai search optimisation</strong> techniques involve deep content analysis to ensure that every paragraph on your site serves a distinct, informative purpose. By removing fluff and enhancing the density of factual claims, we make it easier for AI models to parse and understand your core value propositions. For example, when providing <strong>company aeo geo ai search optimisation services</strong>, we often restructure unstructured text into distinct entity-relationship models that large language models inherently understand.
             </p>
-
-            <div class="method-horizontal">
-                <div class="method-card">
-                    <span class="method-num">01</span>
-                    <div class="method-name">Discover</div>
-                    <p class="method-desc">Identify the queries, categories, and entities where AI systems are forming recommendations about your market.</p>
-                </div>
-                <div class="method-card">
-                    <span class="method-num">02</span>
-                    <div class="method-name">Observe</div>
-                    <p class="method-desc">Run systematic prompts across ChatGPT, Gemini, and Claude. Record who is mentioned, cited, and recommended — and who isn't.</p>
-                </div>
-                <div class="method-card">
-                    <span class="method-num">03</span>
-                    <div class="method-name">Explain</div>
-                    <p class="method-desc">Trace citations to their sources. Identify what makes competitors more citable — content gaps, entity gaps, authority gaps.</p>
-                </div>
-                <div class="method-card">
-                    <span class="method-num">04</span>
-                    <div class="method-name">Optimize</div>
-                    <p class="method-desc">Translate findings into specific content, schema, and structural changes that improve AI visibility over time.</p>
-                </div>
-            </div>
-
-            <div style="margin-top:28px;">
-                <a href="./methodology.html" class="btn-ghost" id="method-link">
-                    Read the full methodology
-                    <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
-                </a>
-            </div>
-
+            
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Comprehensive Company AEO GEO AI Search Optimisation Services</h3>
+            <p style="margin-bottom: 1.5rem;">
+                What sets Optiyx apart as a premier <strong>ai search optimisation agency</strong> is our comprehensive, multi-phased approach. We don't just guess what AI models want; we audit your current generative search footprint and implement data-driven improvements. Our <strong>company aeo geo ai search optimisation services</strong> encompass:
+            </p>
+            
+            <ul style="margin-bottom: 1.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Generative Engine Audits:</strong> We analyze how LLMs currently perceive your brand and identify gaps in your conversational search visibility.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Semantic Content Restructuring:</strong> We rewrite and format your content to be highly extractable, prioritizing clear definitions and factual density.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Authority & Citation Building:</strong> AI models prefer quantitative evidence. We integrate hard statistics and expert quotes that serve as strong citation signals.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Technical Metadata & Schema:</strong> We deploy advanced JSON-LD structured data to guide AI crawlers directly to the most critical information on your site.</li>
+            </ul>
+            
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">The Future of Digital Visibility</h3>
+            <p style="margin-bottom: 1.5rem;">
+                The shift towards conversational search is inevitable. Relying solely on traditional SEO means missing out on the growing segment of users who bypass traditional search results in favor of AI-generated summaries. By investing in <strong>generative engine optimization</strong> now, you future-proof your digital presence. When users ask AI about the best products, services, or legal representation in your category, Optiyx ensures your brand is not just mentioned, but confidently recommended.
+            </p>
+            
+            <p>
+                Embrace the next evolution of search with Optiyx. As a dedicated <strong>ai search optimisation agency</strong>, we have the tools, methodologies, and expertise to elevate your brand in the era of AI. Explore our <strong>company aeo geo ai search optimisation services</strong> today and secure your position as a cited authority in your industry. Don't let your competitors capture the AI conversation—partner with Optiyx and dominate the generative search landscape.
+            </p>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════
-         08 — SEO CONTENT (preserved for keyword density)
-         ════════════════════════════════════════════════════ -->
-    <section style="padding:72px 0;border-bottom:1px solid var(--border-subtle);" aria-label="About Optiyx GEO services">
-        <div class="container">
-            <div class="grid-8-4" style="align-items:start;">
-                <div>
-                    <div class="section-meta" style="margin-bottom:24px;">
-                        <span class="section-index">/ 06</span>
-                        <span class="eyebrow">About the Practice</span>
-                    </div>
-                    <h2 style="font-size:clamp(20px,2.5vw,30px);letter-spacing:-0.022em;margin-bottom:20px;">
-                        Leading the era of <strong>generative engine optimization</strong>
-                    </h2>
-                    <div style="color:var(--text-secondary);line-height:1.8;font-size:14.5px;">
-                        <p style="margin-bottom:16px;">
-                            In today's rapidly evolving digital landscape, traditional search engine indexing is no longer enough. The future of online visibility lies in <strong>generative engine optimization</strong> (GEO). As leading search engines integrate large language models (LLMs) to deliver conversational answers, businesses must adapt their strategies to remain visible. Optiyx is a pioneering <strong>AI search optimisation agency</strong> dedicated to helping brands capture this new wave of traffic. We specialize in structuring your website's content so that AI assistants like Gemini, ChatGPT, and Claude naturally cite your business when responding to user queries.
-                        </p>
-                        <p style="margin-bottom:16px;">
-                            Our approach to <strong>AI search optimisation</strong> is built on advanced data analysis, semantic structuring, and citation mechanics. Whether you're a startup looking to establish authority or a well-established enterprise, our <strong>company AEO GEO AI search optimisation services</strong> are designed to position your brand as the definitive answer in AI-generated summaries.
-                        </p>
-
-                        <h3 style="font-size:16px;color:var(--text-primary);margin:28px 0 12px 0;font-weight:600;">Specialized AI Search Optimisation for Law Firms</h3>
-                        <p style="margin-bottom:16px;">
-                            While our methodologies apply across various industries, we have developed highly specialized strategies as an <strong>AI search optimisation company for law firms</strong>. The legal industry relies heavily on trust, authority, and precise information. Optiyx ensures that your law firm's expertise is properly structured with Q&amp;A formats, cited statistics, and robust legal precedents that AI models recognize as authoritative.
-                        </p>
-
-                        <h3 style="font-size:16px;color:var(--text-primary);margin:28px 0 12px 0;font-weight:600;">Comprehensive Company AEO GEO AI Search Optimisation Services</h3>
-                        <p style="margin-bottom:16px;">
-                            What sets Optiyx apart as a premier <strong>AI search optimisation agency</strong> is our comprehensive, multi-phased approach. Our <strong>company AEO GEO AI search optimisation services</strong> encompass:
-                        </p>
-                        <ul style="margin-bottom:16px;list-style:none;display:flex;flex-direction:column;gap:10px;">
-                            <li style="font-size:14px;color:var(--text-secondary);display:flex;align-items:flex-start;gap:10px;">
-                                <span style="width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:8px;"></span>
-                                <span><strong>Generative Engine Audits:</strong> We analyze how LLMs currently perceive your brand and identify gaps in your conversational search visibility.</span>
-                            </li>
-                            <li style="font-size:14px;color:var(--text-secondary);display:flex;align-items:flex-start;gap:10px;">
-                                <span style="width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:8px;"></span>
-                                <span><strong>Semantic Content Restructuring:</strong> We rewrite and format your content to be highly extractable, prioritizing clear definitions and factual density.</span>
-                            </li>
-                            <li style="font-size:14px;color:var(--text-secondary);display:flex;align-items:flex-start;gap:10px;">
-                                <span style="width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:8px;"></span>
-                                <span><strong>Authority &amp; Citation Building:</strong> AI models prefer quantitative evidence. We integrate hard statistics and expert quotes that serve as strong citation signals.</span>
-                            </li>
-                            <li style="font-size:14px;color:var(--text-secondary);display:flex;align-items:flex-start;gap:10px;">
-                                <span style="width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:8px;"></span>
-                                <span><strong>Technical Metadata &amp; Schema:</strong> We deploy advanced JSON-LD structured data to guide AI crawlers directly to the most critical information on your site.</span>
-                            </li>
-                        </ul>
-                        <p>
-                            Embrace the next evolution of search with Optiyx. As a dedicated <strong>AI search optimisation agency</strong>, we have the tools, methodologies, and expertise to elevate your brand in the era of AI. Don't let your competitors capture the AI conversation — partner with Optiyx and secure your position as a cited authority in your industry.
-                        </p>
-                    </div>
-                </div>
-
-                <div style="display:flex;flex-direction:column;gap:16px;position:sticky;top:80px;">
-                    <div class="surface" style="padding:20px;">
-                        <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:12px;">Analysis Run</div>
-                        <div style="font-size:13px;color:var(--text-secondary);font-family:var(--font-mono);">24 AUG 2026</div>
-                        <div style="font-size:13px;color:var(--text-muted);font-family:var(--font-mono);">14:32 UTC</div>
-                    </div>
-                    <div class="surface" style="padding:20px;">
-                        <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:16px;">Quick links</div>
-                        <div style="display:flex;flex-direction:column;gap:10px;">
-                            <a href="./methodology.html" style="font-size:13px;color:var(--text-secondary);display:flex;align-items:center;gap:8px;transition:color var(--t-fast);" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">
-                                <i class="fa-solid fa-angle-right" style="font-size:10px;color:var(--text-faint);"></i>
-                                GEO Methodology
-                            </a>
-                            <a href="./blog.html" style="font-size:13px;color:var(--text-secondary);display:flex;align-items:center;gap:8px;transition:color var(--t-fast);" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">
-                                <i class="fa-solid fa-angle-right" style="font-size:10px;color:var(--text-faint);"></i>
-                                Research &amp; Insights
-                            </a>
-                            <a href="./faq.html" style="font-size:13px;color:var(--text-secondary);display:flex;align-items:center;gap:8px;transition:color var(--t-fast);" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">
-                                <i class="fa-solid fa-angle-right" style="font-size:10px;color:var(--text-faint);"></i>
-                                FAQ — Deep Dive
-                            </a>
-                            <a href="./pitchdeck.html" style="font-size:13px;color:var(--text-secondary);display:flex;align-items:center;gap:8px;transition:color var(--t-fast);" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">
-                                <i class="fa-solid fa-angle-right" style="font-size:10px;color:var(--text-faint);"></i>
-                                Pitch Deck
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════
-         09 — CTA
-         ════════════════════════════════════════════════════ -->
-    <section class="cta-section" aria-labelledby="cta-heading">
-        <div class="container">
-            <div style="max-width:480px;margin:0 auto;text-align:center;">
-                <div class="eyebrow accent" style="margin-bottom:20px;justify-content:center;display:flex;">
-                    AI Visibility · Get Started
-                </div>
-                <h2 id="cta-heading" style="font-size:clamp(28px,4vw,44px);letter-spacing:-0.03em;margin-bottom:16px;">
-                    See how AI sees<br>your brand.
-                </h2>
-                <p style="font-size:15px;color:var(--text-secondary);margin-bottom:36px;line-height:1.65;">
-                    Run a free AI visibility analysis. Find out which queries you're winning, where competitors are cited instead, and what to change.
-                </p>
-                <a href="./newanalysis.html" class="btn-primary" id="cta-main"
-                    onclick="sessionStorage.setItem('optiyx_analysis_auth','1')"
-                    style="font-size:14px;padding:10px 28px;">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    Start Free Analysis
-                </a>
-                <p style="font-size:12px;color:var(--text-muted);margin-top:14px;">
-                    No account required · founders@optiyx.com
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════
-         10 — FOOTER
-         ════════════════════════════════════════════════════ -->
+    <!-- Footer -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <div class="logo-icon" style="width:24px;height:24px;font-size:12px;border-radius:4px;">O</div>
+                    <div class="logo-icon"
+                        style="width: 26px; height: 26px; font-size: 14px; border-radius: 6px; box-shadow: none;">O
+                    </div>
                     <span>Optiyx</span>
                 </div>
-                <p>AI visibility intelligence for brands that need to understand how AI systems perceive, retrieve, and cite them.</p>
+                <p style="margin-bottom: 1.5rem;">Leading the transition from search engine indexing to generative AI
+                    citations. Future-proof your search presence.</p>
             </div>
             <div class="footer-col">
                 <h4>Product</h4>
                 <ul>
-                    <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start Analysis</a></li>
+                    <li><a href="./newanalysis.html" onclick="sessionStorage.setItem('optiyx_analysis_auth','1')">Start
+                            Analysis</a></li>
                     <li><a href="./methodology.html">Methodology</a></li>
                     <li><a href="./pitchdeck.html">Pitch Deck</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./blog.html">Research</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -783,35 +332,17 @@
             <div class="footer-col">
                 <h4>Connect</h4>
                 <ul>
-                    <li><a href="mailto:founders@optiyx.com"><i class="fa-solid fa-envelope" style="width:14px;"></i> founders@optiyx.com</a></li>
-                    <li><a href="https://www.linkedin.com/company/optiyx/about/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" style="width:14px;"></i> LinkedIn</a></li>
+                    <li><a href="mailto:founders@optiyx.com"><i class="fa-solid fa-envelope"></i> Email Us</a></li>
+                    <li><a href="https://www.linkedin.com/company/optiyx/about/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Optiyx. All rights reserved.</p>
-            <p>AI Visibility Intelligence</p>
+            <p>Empowering digital growth in the age of generative AI.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-        // Nav scroll condensation
-        const nav = document.getElementById('main-nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 20);
-        }, { passive: true });
-
-        // Mobile nav toggle
-        const toggle = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-        toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            toggle.querySelector('i').className = navLinks.classList.contains('open')
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars';
-        });
-    </script>
-
 </body>
+
 </html>
