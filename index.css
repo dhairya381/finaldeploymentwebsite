@@ -893,3 +893,147 @@ footer {
     margin-top: 0.5rem;
 }
 
+/* ==========================================
+   AI Summary Floating Widget (Bottom Left)
+   ========================================== */
+.ai-summary-widget {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    right: auto;
+    z-index: 99999;
+    background-color: rgba(5, 15, 30, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 194, 232, 0.28);
+    border-radius: 18px;
+    padding: 14px 16px 16px 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 24px rgba(0, 194, 232, 0.15);
+    font-family: var(--font-body);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    animation: slideUpWidgetLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUpWidgetLeft {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ai-summary-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary, #a3b3c9);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.ai-summary-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ai-summary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.ai-summary-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+.ai-summary-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 194, 232, 0.25);
+}
+
+.ai-summary-btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+/* Tooltip on hover */
+.ai-summary-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background-color: #09172a;
+    border: 1px solid rgba(0, 194, 232, 0.3);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.ai-summary-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Individual Button Skins matching provided images */
+.ai-summary-btn.claude {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(217, 104, 70, 0.25);
+}
+
+.ai-summary-btn.chatgpt {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ai-summary-btn.perplexity {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ai-summary-btn.gemini {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .ai-summary-widget {
+        bottom: 16px;
+        left: 16px;
+        right: auto;
+        padding: 12px 14px 14px 14px;
+    }
+    .ai-summary-btn {
+        width: 42px;
+        height: 42px;
+    }
+}
+
